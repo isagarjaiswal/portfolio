@@ -1,0 +1,27 @@
+@import "./component/varibale.scss";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  background-color: var(--bg2);
+}
+
+.active {
+  color: salmon;
+}
+
+ul {
+  li {
+    color: var(--primary);
+    text-decoration: none;
+  }
+}

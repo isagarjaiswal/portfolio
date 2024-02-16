@@ -1,0 +1,68 @@
+:root {
+  --primary: rgb(255, 255, 255);
+  --secondary: rgb(160, 160, 160);
+  --tertiary: rgb(112, 112, 112);
+
+  --Accent: rgb(250, 188, 155);
+
+  --green: rgb(18, 201, 113);
+  --greenGB: rgb(16, 42, 30);
+  --bgAccent: rgb(56, 34, 24);
+
+  --bg2: rgb(40, 40, 40);
+  --bg1: rgb(26, 26, 26);
+  --bg: rgb(20, 20, 20);
+
+  --border: rgb(31, 31, 31);
+
+  --action-bg-normal: rgb(51, 51, 51);
+  --action-bg-hover: rgb(60, 60, 60);
+  --action-bg-pressed: rgb(69, 69, 69);
+
+  --action-stroke-pressed: rgb(74, 74, 74);
+  --action-stroke-hover: rgb(94, 94, 94);
+  --action-stroke-normal: rgb(46, 46, 46);
+
+  --ghost-bg-hover: rgb(36, 36, 36);
+  --ghost-bg-pressed: rgb(65, 65, 65);
+  --ghost-bg-selected: rgb(51, 51, 51);
+
+  --btn-light: rgb(255, 255, 255);
+  --btn-dark: rgb(255, 255, 255);
+  --btn-invert: rgb(0, 0, 0);
+}
+
+.light {
+  --primary: rgb(17, 17, 17);
+  --secondary: rgb(102, 102, 102);
+  --tertiary: rgb(153, 153, 153);
+
+  --Accent: rgb(43, 43, 43);
+
+  --green: rgb(8, 128, 70);
+  --greenGB: rgb(215, 250, 234);
+
+  --bgAccent: rgb(250, 233, 225);
+
+  --bg2: rgb(239, 239, 240);
+  --bg1: rgb(255, 255, 255);
+  --bg: rgb(245, 245, 245);
+
+  --border: rgb(235, 235, 235);
+
+  --action-bg-normal: rgb(48, 50, 54);
+  --action-bg-hover: rgb(24, 25, 27);
+  --action-bg-pressed: rgb(96, 100, 108);
+
+  --action-stroke-pressed: rgb(174, 177, 183);
+  --action-stroke-hover: rgb(158, 161, 168);
+  --action-stroke-normal: rgb(198, 200, 204);
+
+  --ghost-bg-hover: rgb(242, 242, 243);
+  --ghost-bg-selected: rgb(229, 230, 232);
+  --ghost-bg-pressed: rgb(214, 216, 219);
+
+  --btn-light: rgb(255, 255, 255);
+  --btn-dark: rgb(18, 18, 18);
+  --btn-invert: rgb(255, 255, 255);
+}
