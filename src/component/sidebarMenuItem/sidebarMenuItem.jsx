@@ -1,21 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./sidebarMenuItem.scss"
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const SidebarMenuItem = ({ route, icon, text }) => {
-    const [pressed, setPressed] = useState(false);
-    const handleClick = () => {
-        setPressed(true);
-        setTimeout(() => {
-            setPressed(false);
-        }, 100);
-    }
     return (
-        <div className={`side-page ${pressed ? 'pressed' : ''}`} onClick={handleClick} >
-            <Link className='side-page-link' to={`/${route}`}>
-                <div className='side-page-icon'>{icon}</div>
-                <span className='side-page-text'>{text}</span>
-            </Link>
+        <div className={`sidebar-menu-item`} >
+            <NavLink activeClassName="active" className='sidebar-menu-link'
+            to={`/${route}`}>
+                <div className='sidebar-menu-icon'>{icon}</div>
+                <span className='sidebar-menu-text'>{text}</span>
+            </NavLink>
         </div>
     )
 }

@@ -5,61 +5,63 @@
 
   .nav-bar-box {
     position: fixed;
-    height: 100vh !important;
-    // width: 18vw;
-    width: 18%;
+    height: 100vh;
+    width: 18vw;
+    min-width: 260px;
     background-color: var(--bg);
   }
 
   .main-content-box {
     flex: 1;
     padding: 140px;
-    // margin-left: 18vw;
-    margin-left: 18%;
+    margin-left: 18vw;
     background-color: var(--bg1);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    //  remove an add more css
+    * {
+      font-size: 90px;
+      color: salmon;
+    }
   }
 }
-
 @media screen and (max-width: $screenDesktopMedium) {
-  .box {
-    .main-content-box {
-      padding: 100px;
-    }
+  .portfolio-container .main-content-box {
+    padding: 100px;
   }
 }
 
 @media screen and (max-width: $screenDesktop) {
-  .box {
-    .nav-bar-box {
-      width: $navBarWidthDesktop;
-      height: 100vh;
-    }
+  .portfolio-container .nav-bar-box {
+    width: 90px;
+    min-width: 90px;
+    height: 100vh;
+  }
 
-    .main-content-box {
-      padding: 80px;
-      margin-left: $navBarWidthDesktop;
-    }
+  .portfolio-container .main-content-box {
+    padding: 80px;
+    margin-left: 90px;
   }
 }
 
 @media screen and (max-width: $screenVerticleMobile) {
-  .box {
-    display: flex;
+  .portfolio-container {
     flex-direction: column;
-    overflow: hidden;
+  }
 
-    .nav-bar-box {
-      height: min-content;
-      position: fixed;
-    }
-    .main-content-box {
-      margin: auto;
-      margin-top: 50px;
-      padding: 64px 24px;
-    }
+  .portfolio-container .nav-bar-box {
+    background-color: red;
+    height: 50px;
+    width: 100vw;
+    min-width: 100vw;
+    color: saddlebrown;
+  }
+
+  .portfolio-container .main-content-box {
+    padding: 0;
+    margin: 60px 20px;
   }
 }

@@ -8,7 +8,10 @@ export const Theme = () => {
 
     return (
         <div onClick={toggleTheme} className='side-mode-container' >
-            {theme ? (<LightMode />) : (<DarkMode />)}
+            
+            <div className='side-mode'>
+                {theme ? (<LightMode />) : (<DarkMode />)}
+            </div>
         </div >
     );
 }

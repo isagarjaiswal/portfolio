@@ -9,9 +9,9 @@ export const SidebarMenuLinks = () => {
         <div className="side-pages-container">
             <div className='side-page-container'>
                 <SidebarMenuItem icon={<HomePageIcon />} text="HomePage" route="" />
-                <SidebarMenuItem icon={<MaterialIcon />} text="Projects" route="projects" />
+                <SidebarMenuItem icon={<MaterialIcon />} text="Projects" route="project" />
                 <SidebarMenuItem icon={<UserAvatar />} text="About" route="about" />
-                <SidebarMenuItem icon={<PenIcon />} text="Blogs" route="blogs" />
+                <SidebarMenuItem icon={<PenIcon />} text="Blogs" route="blog" />
                 <SidebarMenuItem icon={<ContactIcon />} text="Contact" route="contact" />
             </div>
         </div>
