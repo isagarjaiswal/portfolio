@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export const SidebarMenuItem = ({ route, icon, text }) => {
     return (
-        <div className={`sidebar-menu-item`} >
+        <div className="sidebar-menu-item" >
             <NavLink activeClassName="active" className='sidebar-menu-link'
             to={`/${route}`}>
                 <div className='sidebar-menu-icon'>{icon}</div>

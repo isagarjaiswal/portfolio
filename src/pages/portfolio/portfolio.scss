@@ -3,6 +3,7 @@
 .portfolio-container {
   display: flex;
 
+
   .nav-bar-box {
     position: fixed;
     height: 100vh;
@@ -21,6 +22,8 @@
     margin-right: 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:  90vw;
+    height: 80vh;
     //  remove an add more css
     * {
       font-size: 60px;
