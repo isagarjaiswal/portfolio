@@ -6,18 +6,17 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
-    
   }
   * {
-    transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   }
 }
 
 @media screen and (max-width: $screenDesktop) {
   .side-pages-container {
     order: 2;
+
     .side-page-container {
-      list-style: none;
       display: flex;
       flex-direction: column;
       gap: 4px;
@@ -27,10 +26,4 @@
       overflow: visible;
     }
   }
-}
-
-@media screen and (max-width: $screenVerticleMobile) {
-}
-
-@media screen and (max-width: $screenMobile) {
 }

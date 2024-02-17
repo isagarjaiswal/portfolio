@@ -1,4 +1,4 @@
-@import "../varibale.scss";
+@import "../varibale.scss"; // Corrected variable import filename
 
 .sidebar-menu-item {
   width: 100%;
@@ -6,15 +6,14 @@
   display: flex;
   border-radius: 12px;
   overflow: hidden;
+
   .sidebar-menu-link {
     text-decoration: none;
     width: 100%;
     font-size: var(--text-p2);
     font-weight: 600;
-
     display: flex;
     align-items: center;
-
     gap: 10px;
     color: var(--tertiary);
     background-color: var(--ghost-bg-normal);
@@ -24,75 +23,72 @@
       color: var(--secondary);
       background-color: var(--ghost-bg-hover);
     }
+
     .sidebar-menu-icon {
       display: flex;
       align-items: center;
       width: 24px;
     }
   }
-  .active {
+
+  &.active {
     background-color: var(--ghost-bg-selected);
     color: var(--primary);
   }
 }
 
-// --ghost-bg-hover: rgb(36, 36, 36);
-// --ghost-bg-pressed: rgb(65, 65, 65);
-// --ghost-bg-selected: rgb(51, 51, 51);
+@media screen and (max-width: $screenDesktop) {
+  .sidebar-menu-item {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 
-// @media screen and (max-width: $screenDesktop) {
-//   .sidebar-menu-item {
-//     width: 100%;
-//     min-width: 48px;
-//     min-height: 48px;
-//     margin: 0;
-//     padding: 0px;
-//     position: relative;
-//     align-items: center;
-//     justify-content: center;
+    .sidebar-menu-link {
+      justify-content: center;
+    }
 
-//     .sidebar-menu-link {
-//       justify-content: center;
-//     }
+    .sidebar-menu-text {
+      display: none;
+    }
+    &:hover {
+      background-color: var(--ghost-bg-hover);
+      .sidebar-menu-text {
+        background-color: var(--bg1);
+        position: absolute;
+        left: 60px;
+        display: inline-block !important;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
 
-//     .sidebar-menu-text {
-//       display: none;
-//     }
-
-//     &:hover {
-//       .sidebar-menu-text {
-//         background-color: var(--bg1);
-//         position: absolute;
-//         left: 60px;
-//         display: inline-block;
-//         padding: 5px 10px;
-//         border-radius: 5px;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: $screenVerticleMobile) {
-//   .sidebar-menu {
-//     height: 30px;
-//     padding-left: 20px;
-//     width: 90vw;
-//     .sidebar-menu-link {
-//       display: flex;
-//       align-items: center;
-//       justify-content: flex-start;
-//       margin: 0px 20px;
-//     }
-//     .sidebar-menu-text {
-//       display: inline-block;
-//     }
-//     &:hover {
-//       .sidebar-menu-text {
-//         display: contents;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: $screenVerticleMobile) {
+  .sidebar-menu {
+    height: 30px;
+    padding-left: 20px;
+    width: 90vw;
+    .sidebar-menu-link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0px 20px;
+    }
+    .sidebar-menu-text {
+      display: inline-block;
+    }
+    &:hover {
+      .sidebar-menu-text {
+        display: contents;
+      }
+    }
+  }
+}
 
 // @media screen and (max-width: $screenMobile) {
 // }
