@@ -1,6 +1,6 @@
 import React from "react";
 
-function HomePageIcon() {
+export function HomePageIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +14,3 @@ function HomePageIcon() {
   );
 }
 
-export default HomePageIcon;

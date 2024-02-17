@@ -11,17 +11,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-.box {
-  background-color: var(--bg2);
-}
-
-.active {
-  color: salmon;
-}
-
-ul {
-  li {
-    color: var(--primary);
-    text-decoration: none;
-  }
+.main-container {
+  background-color: var(--bg);
+  min-width: 100vw;
+  min-height: 100vh;
 }

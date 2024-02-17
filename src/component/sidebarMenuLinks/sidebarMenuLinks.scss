@@ -1,0 +1,29 @@
+@import "../varibale.scss";
+
+.side-pages-container {
+  flex-grow: 1;
+  .side-page-container {
+  }
+}
+
+@media screen and (max-width: $screenDesktop) {
+  .side-pages-container {
+    order: 2;
+    .side-page-container {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      border-radius: 2px;
+      justify-content: center;
+      align-items: center;
+      overflow: visible;
+    }
+  }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+}
+
+@media screen and (max-width: $screenMobile) {
+}

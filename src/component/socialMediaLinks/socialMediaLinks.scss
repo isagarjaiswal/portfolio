@@ -1,0 +1,52 @@
+@import "../varibale.scss";
+
+
+.side-social-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  .side-social-item {
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+
+    color: var(--tertiary);
+    &:hover {
+      background-color: var(--ghost-bg-hover);
+      color: var(--primary);
+    }
+    &.pressed {
+      background-color: var(--ghost-bg-pressed);
+      color: var(--primary);
+    }
+  }
+
+  .side-social-item-twitter {
+    @include positioned-social-tooltip("twitter");
+  }
+
+  .side-social-item-linkedln {
+    @include positioned-social-tooltip("Linkedln");
+  }
+
+  .side-social-item-leetcode {
+    @include positioned-social-tooltip("leetcode");
+  }
+}
+
+@media screen and (max-width: $screenDesktop) {
+  .side-social-item-container {
+    order: 4;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+  .side-social-item-container {
+    flex-direction: row;
+  }
+}

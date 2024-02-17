@@ -1,0 +1,72 @@
+@import "../varibale.scss";
+
+.side-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .side-img-container {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .myimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .role-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    .name-container {
+      font-size: $text-p1;
+      color: var(--primary);
+    }
+
+    .role-container {
+      color: var(--secondary);
+      font-size: $text-p2;
+    }
+  }
+}
+
+@media screen and (max-width: $screenDesktop) {
+  .side-profile-container {
+    .side-img-container {
+      width: 48px;
+      height: 48px;
+    }
+    .role-name-container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+  .side-profile-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    .role-name-container {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: $screenMobile) {
+  .side-profile-container {
+    .role-name-container {
+      display: none;
+    }
+  }
+}

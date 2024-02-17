@@ -1,0 +1,65 @@
+@import "../../component/varibale.scss";
+
+.portfolio-container {
+  display: flex;
+
+  .nav-bar-box {
+    position: fixed;
+    height: 100vh !important;
+    // width: 18vw;
+    width: 18%;
+    background-color: var(--bg);
+  }
+
+  .main-content-box {
+    flex: 1;
+    padding: 140px;
+    // margin-left: 18vw;
+    margin-left: 18%;
+    background-color: var(--bg1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: $screenDesktopMedium) {
+  .box {
+    .main-content-box {
+      padding: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: $screenDesktop) {
+  .box {
+    .nav-bar-box {
+      width: $navBarWidthDesktop;
+      height: 100vh;
+    }
+
+    .main-content-box {
+      padding: 80px;
+      margin-left: $navBarWidthDesktop;
+    }
+  }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .nav-bar-box {
+      height: min-content;
+      position: fixed;
+    }
+    .main-content-box {
+      margin: auto;
+      margin-top: 50px;
+      padding: 64px 24px;
+    }
+  }
+}

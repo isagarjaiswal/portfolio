@@ -1,2 +1,10 @@
 export { DarkMode } from "./darkMode";
 export { LightMode } from "./lightMode";
+export { TwitterIcon } from "./twitterIcon";
+export { LikedlnIcon } from "./linkedlnIcon";
+export { LeetcodeIcon } from "./leetCodeIcon";
+export { HomePageIcon } from "./homepagIcon";
+export { PenIcon } from "./penIcon";
+export { ContactIcon } from "./contactIcon";
+export { UserAvatar } from "./userAvatarProfile";
+export { MaterialIcon } from "./materialIcon";
