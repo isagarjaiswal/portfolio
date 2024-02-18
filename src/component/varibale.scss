@@ -31,6 +31,7 @@
   --btn-dark: rgb(255, 255, 255);
   --btn-invert: rgb(0, 0, 0);
 }
+
 .light {
   --primary: rgb(17, 17, 17);
   --secondary: rgb(102, 102, 102);
@@ -57,7 +58,7 @@
   --action-stroke-hover: rgb(158, 161, 168);
   --action-stroke-normal: rgb(198, 200, 204);
 
-  --ghost-bg-hover:rgb(206, 208, 211);
+  --ghost-bg-hover: rgb(206, 208, 211);
   --ghost-bg-selected: rgb(217, 218, 220);
   --ghost-bg-pressed: rgb(214, 216, 219);
 
@@ -82,6 +83,7 @@ $screenDesktopMedium: 1270px;
 
 @mixin positioned-social-tooltip($content) {
   position: relative;
+
   &:hover::after {
     content: $content;
     position: absolute;

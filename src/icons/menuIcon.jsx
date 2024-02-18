@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MenuIcon = () => {
+export const MenuIcon = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,5 +13,3 @@ const MenuIcon = () => {
         </svg>
     );
 }
-
-export default MenuIcon

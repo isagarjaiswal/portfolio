@@ -1,0 +1,62 @@
+@import "../varibale.scss";
+
+
+@media screen and (max-width: $screenVerticleMobile) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+    z-index: 111;
+
+    height: min-content;
+    margin: 5px;
+    transition: all 0.1s linear;
+
+    background-color: var(--bg);
+    color: var(--primary);
+
+    .nav-bar-upper-body {
+      padding: 16px 22px 16px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .nav-bar-openner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .openner {
+          display: grid;
+          place-items: center;
+          transition: all 0.1s ease-in-out;
+        }
+      }
+    }
+
+    .nav-bar-line {
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-bar-lower-body {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-direction: column;
+
+      .nav-bar-line {
+        width: 80vw;
+        order: 2;
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 12px;
+        margin-top: 12px;
+      }
+    }
+  }
+}

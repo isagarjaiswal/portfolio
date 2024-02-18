@@ -3,7 +3,6 @@
 .portfolio-container {
   display: flex;
 
-
   .nav-bar-box {
     position: fixed;
     height: 100vh;
@@ -22,8 +21,9 @@
     margin-right: 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width:  90vw;
+    width: 90vw;
     height: 80vh;
+
     //  remove an add more css
     * {
       font-size: 60px;
@@ -31,6 +31,7 @@
     }
   }
 }
+
 @media screen and (max-width: $screenDesktopMedium) {
   .portfolio-container .main-content-box {
     padding: 100px;
@@ -56,15 +57,13 @@
   }
 
   .portfolio-container .nav-bar-box {
-    background-color: red;
-    height: 50px;
-    width: 100vw;
-    min-width: 100vw;
-    color: saddlebrown;
+    position: static;
+    height: min-content;
   }
 
   .portfolio-container .main-content-box {
-    padding: 0;
-    margin: 60px 20px;
+    margin: 10px 10px 10px 10px;
+    width: 100px;
+    height: 100px;
   }
 }

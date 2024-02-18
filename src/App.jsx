@@ -5,8 +5,8 @@ import "./App.scss";
 export const ThemeContext = createContext();
 
 const App = () => {
-
   const [theme, setTheme] = useState(false);
+  
   const toggleTheme = () => {
     setTheme(prevMode => !prevMode);
   };

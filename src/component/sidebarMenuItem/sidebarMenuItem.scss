@@ -1,11 +1,10 @@
-@import "../varibale.scss"; // Corrected variable import filename
+@import "../varibale.scss";
 
 .sidebar-menu-item {
   width: 100%;
   height: 40px;
   display: flex;
   border-radius: 12px;
-  overflow: hidden;
 
   .sidebar-menu-link {
     text-decoration: none;
@@ -32,37 +31,41 @@
   }
 }
 
-.sidebar-menu-item > .active {
+.sidebar-menu-item>.active {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   background-color: var(--ghost-bg-selected);
   color: var(--primary);
+
+  &:hover {
+    background-color: var(--ghost-bg-selected);
+    color: var(--primary);
+  }
 }
 
 @media screen and (max-width: $screenDesktop) {
   .sidebar-menu-item {
+    overflow: visible;
     width: 50px;
     height: 50px;
     margin: 0;
     padding: 0px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
 
     .sidebar-menu-link {
-      justify-content: center;
+      gap: 20px;
     }
 
     .sidebar-menu-text {
       display: none;
     }
+
     &:hover {
       background-color: var(--ghost-bg-hover);
+
       .sidebar-menu-text {
+        display: inline-block;
         background-color: var(--bg1);
-        position: absolute;
-        left: 60px;
-        display: inline-block !important;
         padding: 5px 10px;
         border-radius: 5px;
       }
@@ -70,27 +73,34 @@
   }
 }
 
-// @media screen and (max-width: $screenVerticleMobile) {
-//   .sidebar-menu {
-//     height: 30px;
-//     padding-left: 20px;
-//     width: 90vw;
-//     .sidebar-menu-link {
-//       display: flex;
-//       align-items: center;
-//       justify-content: flex-start;
-//       margin: 0px 20px;
-//     }
-//     .sidebar-menu-text {
-//       display: inline-block;
-//     }
-//     &:hover {
-//       .sidebar-menu-text {
-//         display: contents;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: $screenVerticleMobile) {
+  .sidebar-menu-item {
+    height: 40px;
+    width: 100%;
 
-// @media screen and (max-width: $screenMobile) {
-// }
+    .sidebar-menu-link {
+      gap: 10px;
+    }
+
+    .sidebar-menu-text {
+      display: inline-block;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      .sidebar-menu-text {
+        display: inline-block;
+        background-color: transparent;
+        display: block;
+        padding: 0;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+    }
+  }
+}

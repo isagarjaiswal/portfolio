@@ -8,3 +8,5 @@ export { PenIcon } from "./penIcon";
 export { ContactIcon } from "./contactIcon";
 export { UserAvatar } from "./userAvatarProfile";
 export { MaterialIcon } from "./materialIcon";
+export { MenuIcon } from "./menuIcon";
+export { CrossIcon } from "./crossIcon";

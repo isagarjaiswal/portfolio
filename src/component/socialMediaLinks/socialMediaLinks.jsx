@@ -1,20 +1,7 @@
 import React from 'react'
 import "./socialMediaLinks.scss"
 import { TwitterIcon, LikedlnIcon, LeetcodeIcon } from "../../icons/index";
-
-
-const LinkItem = ({ link, icon, className }) => {
-    const handleClick = () => {
-        if (link) {
-            window.open(link, "_blank");
-        }
-    }
-    return (<div onClick={handleClick} className={`side-social-item`} rel="noopener noreferrer">
-        <div className={`side-social-item-${className}`}>
-            {icon}
-        </div>
-    </div>)
-}
+import { LinkItem } from '../linkItem/linkItem';
 
 export const SocialMediaLinks = () => {
     return (
