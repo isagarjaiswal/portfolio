@@ -8,4 +8,3 @@ export { SidebarMenuItem } from "./sidebarMenuItem/sidebarMenuItem";
 export { LinkItem } from "./linkItem/linkItem";
 export { Footer } from "./footer/footer";
 export { Blog } from "./blog/blog";
-export { Contact } from "./contact/contact";
