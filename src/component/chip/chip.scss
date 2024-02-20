@@ -1,0 +1,21 @@
+@import "../variable.scss";
+
+.chip {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    width: 45%;
+    border: 1px solid var(--border);
+    background-color: var(--bg2);
+
+    .chip__heading {
+        font-size: $text-h4;
+    }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+    .chip {
+        width: 100%;
+    }
+}

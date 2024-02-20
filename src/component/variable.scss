@@ -102,7 +102,6 @@ $screenDesktopMedium: 1270px;
   }
 }
 
-/* Define the mixin */
 @mixin slideInAnimation($duration: 1s, $distance: 30px, $timing-function: ease-in-out) {
   @keyframes slideIn {
     from {

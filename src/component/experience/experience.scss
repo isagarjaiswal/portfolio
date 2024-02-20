@@ -1,0 +1,90 @@
+@import "../variable.scss";
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+
+  .experience-heading {
+    font-size: $text-h1;
+    font-weight: 500;
+  }
+
+  .experience-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .experience-item {
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      color: var(--secondary);
+
+      .experience-date {
+        width: 28%;
+        font-size: $text-p1;
+      }
+
+      .experience-content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-size: $text-p1;
+
+        .compnay-role-experience {
+          .experience-role {
+            margin-bottom: 10px;
+          }
+
+          .experience-company {
+            color: var(--primary);
+            margin-bottom: 10px;
+          }
+        }
+
+        .experience-description {}
+      }
+    }
+
+    .experience-row {
+      margin-top: 30px;
+      background-color: var(--border);
+      padding: 1px;
+    }
+  }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+  .experience-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .experience-item {
+      width: 100%;
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 32px;
+      color: var(--secondary);
+
+      .experience-date {
+        // font-size: 16px;
+        width: 80vw !important;
+
+        font-size: $text-p1;
+      }
+
+      .experience-content {
+        width: 90vw !important;
+        line-height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../variable.scss";
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    padding: 20px;
+}
+
+.tools__heading {
+    font-size: $text-h1;
+}
+
+.tools__description {
+    margin: 2vw;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__category {
+    margin: 10px;
+}
+
+.skill-sub-heading {
+    font-size: $text-h3;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 2px;
+}

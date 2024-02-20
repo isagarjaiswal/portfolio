@@ -1,4 +1,4 @@
-@import "../../component/varibale.scss";
+@import "../../component/variable.scss";
 
 .blogs-container {
   display: flex;
@@ -6,6 +6,7 @@
   justify-content: center;
   gap: 20px;
   color: var(--primary);
+
   .blogs-heading {
     font-size: $text-h1;
     font-weight: 500;
@@ -16,6 +17,7 @@
     font-size: $text-h4;
     margin-bottom: 120px;
   }
+
   .blogs {
     display: flex;
     flex-direction: column;
