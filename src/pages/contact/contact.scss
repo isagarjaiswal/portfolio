@@ -1,9 +1,9 @@
 @import "../../component/varibale.scss";
 
 
+
 .contact-container {
-    margin: 140px;
-    width: 90%;
+    width: 100%;
     color: var(--primary);
     display: flex;
     flex-direction: column;
@@ -54,11 +54,12 @@
 
                     .address {
                         font-size: $text-p1;
+                        word-spacing: 1px;
                         color: var(--primary);
                     }
 
                     .label {
-                        font-weight: 500;
+                        font-weight: 600;
                         font-size: $text-p1;
                         color: var(--secondary);
                     }
@@ -78,12 +79,16 @@
                 font-weight: 500;
                 border-radius: 10px;
                 border: none;
-                color: var(--primary);
+                color: var(--btn-light);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 5px;
-                background-color: var(--ghost-bg-pressed);
+                background-color: var(--action-bg-normal);
+
+                &:hover {
+                    background-color: var(--action-bg-hover);
+                }
             }
         }
     }
@@ -143,7 +148,7 @@
 
             .contact-form-btn {
                 background-color: var(--green);
-                color: var(--primary);
+                color: var(--btn-light);
                 padding: 16px;
                 border-radius: 8px;
                 border: none;
@@ -155,41 +160,24 @@
 }
 
 @media screen and (max-width: $screenDesktopMedium) {
-    .contact-container {
-        margin: 100px;
-    }
+    .contact-container {}
 }
 
 @media screen and (max-width: $screenDesktop) {
-    .contact-container {
-        margin: 90px;
-    }
+    .contact-container {}
 }
-
 
 @media screen and (max-width: $screenVerticleMobile) {
     .contact-container {
-        margin: 20px;
+        width: 100%;
 
         .contact-header {
-            .heading-description {
-                .contact-heading {}
-
-                .contact-description {}
-            }
-
             .contact-information {
                 .contact-line {}
 
                 .email-phone-contact {
                     flex-direction: column;
                     gap: 20px;
-
-                    .email-container-contact {
-                        .address {}
-
-                        .label {}
-                    }
                 }
             }
 
@@ -216,17 +204,7 @@
                         width: 100%;
                     }
                 }
-
-                .text-area-contact {}
-
-                .contact-form-btn {}
             }
         }
-    }
-}
-
-@media screen and (max-width: $screenMobile) {
-    .contact-container {
-        margin: 20px 10px 10px 10px;
     }
 }

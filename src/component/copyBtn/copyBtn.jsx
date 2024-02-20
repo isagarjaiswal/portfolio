@@ -16,7 +16,7 @@ export const CopyBtn = () => {
     };
 
     return (
-        <button className='copy-btn' onClick={copyToClipboard}>
+        <button className={`copy-btn ${isCopied && "copy-btn-click"}`} onClick={copyToClipboard}>
             {isCopied ? <ResumeDone dimension={"18px"} /> : <CopyIcon dimension={"24px"} />}
             {isCopied ? "Email Copied" : "Copy Email"}
         </button>);

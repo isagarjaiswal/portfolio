@@ -38,7 +38,7 @@
   }
 
   .portfolio-container .main-content-box {
-    padding: 80px;
+    padding: 90px;
     margin-left: 90px;
   }
 }
@@ -50,19 +50,21 @@
   }
 
   .portfolio-container .nav-bar-box {
+
     position: static;
     height: min-content;
   }
 
   .portfolio-container .main-content-box {
+    padding: 60px 20px 20px 20px;
+
     margin: 10px;
-    width: calc(98vw - 5px);
+    width: calc(98vw - 12px);
+
     height: 100vh;
   }
 }
 
-@media screen and (max-width: $screenVerticleMobile) {
-  .portfolio-container .main-content-box {
-    width: calc(98vw - 12px);
-  }
+@media screen and (max-width: $screenMobile) {
+  .portfolio-container .main-content-box {}
 }

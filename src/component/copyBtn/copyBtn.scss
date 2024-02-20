@@ -13,8 +13,17 @@
     align-items: center;
     gap: 5px;
     cursor: pointer;
+
     background-color: var(--bg1);
     border: 1px solid var(--ghost-bg-pressed);
+
+    &:hover {
+        border-color: var(--copy-btn-hover-border);
+    }
+}
+
+.copy-btn-click {
+    background-color: var(--copy-btn-click);
 }
 
 @media screen and (max-width: $screenVerticleMobile) {
