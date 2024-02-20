@@ -94,7 +94,7 @@
     }
 
     .form-main-container {
-        @include slideInAnimation(1s);
+        @include slideInAnimation();
         display: flex;
         flex-direction: column;
         gap: 32px;

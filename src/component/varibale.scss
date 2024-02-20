@@ -103,12 +103,13 @@ $screenDesktopMedium: 1270px;
 }
 
 /* Define the mixin */
-@mixin slideInAnimation($duration: 0.5s, $distance: 30px, $timing-function: ease-in-out) {
+@mixin slideInAnimation($duration: 1s, $distance: 30px, $timing-function: ease-in-out) {
   @keyframes slideIn {
     from {
       opacity: 0;
       transform: translateY($distance);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
