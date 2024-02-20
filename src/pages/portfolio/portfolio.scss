@@ -14,27 +14,19 @@
   .main-content-box {
     flex: 1;
     padding: 140px;
-    margin-left: 18vw;
     background-color: var(--bg1);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 10px calc(18vw + 10px);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 90vw;
-    height: 80vh;
-
-    //  remove an add more css
-    * {
-      font-size: 60px;
-      color: salmon;
-    }
   }
 }
 
 @media screen and (max-width: $screenDesktopMedium) {
+
   .portfolio-container .main-content-box {
     padding: 100px;
+    margin: 10px 10px 10px 260px;
   }
 }
 
@@ -54,6 +46,7 @@
 @media screen and (max-width: $screenVerticleMobile) {
   .portfolio-container {
     flex-direction: column;
+    justify-content: center;
   }
 
   .portfolio-container .nav-bar-box {
@@ -62,8 +55,14 @@
   }
 
   .portfolio-container .main-content-box {
-    margin: 10px 10px 10px 10px;
-    width: 100px;
-    height: 100px;
+    margin: 10px;
+    width: calc(98vw - 5px);
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+  .portfolio-container .main-content-box {
+    width: calc(98vw - 12px);
   }
 }

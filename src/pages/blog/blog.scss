@@ -1,0 +1,24 @@
+@import "../../component/varibale.scss";
+
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: var(--primary);
+  .blogs-heading {
+    font-size: $text-h1;
+    font-weight: 500;
+  }
+
+  .blogs-description {
+    color: var(--secondary);
+    font-size: $text-h4;
+    margin-bottom: 120px;
+  }
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+}

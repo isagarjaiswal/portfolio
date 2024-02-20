@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./portfolio.scss";
 import { Routes, Route } from 'react-router-dom';
 import { About, Blog, Contact, Homepage, Project } from '../index';
-import { SideBar, Navbar } from "../../component/index"
+import { SideBar, Navbar, Footer } from "../../component/index"
 
 
 export const Portfolio = () => {
@@ -32,6 +32,7 @@ export const Portfolio = () => {
                     <Route exact path='/project' element={<Project />} />
                     <Route exact path='/contact' element={<Contact />} />
                 </Routes>
+                <Footer />
             </div>
         </div>
     );

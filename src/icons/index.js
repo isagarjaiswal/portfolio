@@ -10,3 +10,5 @@ export { UserAvatar } from "./userAvatarProfile";
 export { MaterialIcon } from "./materialIcon";
 export { MenuIcon } from "./menuIcon";
 export { CrossIcon } from "./crossIcon";
+export { CopyIcon } from "./copyIcon";
+export { ResumeDone } from "./resumeDone";

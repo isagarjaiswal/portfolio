@@ -7,4 +7,5 @@ export { SocialMediaLinks } from "./socialMediaLinks/socialMediaLinks";
 export { SidebarMenuItem } from "./sidebarMenuItem/sidebarMenuItem";
 export { LinkItem } from "./linkItem/linkItem";
 export { Footer } from "./footer/footer";
-export { Blog } from "./blog/blog";
+export { BlogCard } from "./blogCard/blogCard";
+export { CopyBtn } from "./copyBtn/copyBtn"

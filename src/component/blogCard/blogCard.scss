@@ -1,0 +1,113 @@
+@import "../../component/varibale.scss";
+
+.blog-container {
+    display: flex;
+    width: 100%;
+    gap: 60px;
+}
+
+.blog-card {
+    width: 65%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-date {
+    margin-bottom: 10px;
+    color: var(--tertiary); // Light Gray
+    font-weight: 500;
+    font-size: $text-p1;
+}
+
+.blog-heading {
+    font-size: $text-h3;
+    font-weight: 500;
+    color: var(--primary); // White
+    margin-bottom: 8px;
+}
+
+.blog-description {
+    margin-bottom: 10px;
+    white-space: wrap;
+    font-size: $text-h5;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--secondary); // Medium Gray
+}
+
+.blog-btn {
+    color: var(--primary); // White
+    padding: 12px 16px;
+    border: 1px solid var(--action-stroke-normal); // Dark Gray
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid var(--action-stroke-hover); // Dark Gray
+    }
+}
+
+.blog-img-container {
+    width: 35%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .blog-img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-size: 10px 10px;
+        background-image: repeating-linear-gradient(45deg,
+                rgb(72, 72, 72) 0,
+                rgb(72, 72, 72) 1px,
+                rgb(229, 229, 247) 0,
+                rgb(229, 229, 247) 50%);
+    }
+}
+
+@media screen and (max-width: $screenVerticleMobile) {
+    .blog-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 32px;
+    }
+
+    .blog-card {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-date {
+        font-size: $text-p1m;
+    }
+
+
+    .blog-description {
+        margin-bottom: 10px;
+        font-size: $text-h5m;
+        font-weight: 400;
+    }
+
+    .blog-btn {
+        text-align: center;
+        border: 1px solid var(--action-stroke-normal);
+        width: 100%;
+    }
+
+    .blog-img-container {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+
+        .blog-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

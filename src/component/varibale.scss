@@ -73,7 +73,9 @@ $text-h2: 26px;
 $text-h3: 22px;
 $text-h4: 20px;
 $text-h5: 18px;
+$text-h5m: 17px;
 $text-p1: 16px;
+$text-p1m: 15px;
 $text-p2: 14px;
 
 $screenMobile: 399px;
@@ -94,12 +96,11 @@ $screenDesktopMedium: 1270px;
     padding: 5px 10px;
   }
 }
-
+// @media screen and (max-width: $screenDesktopMedium) {
+// }
 // @media screen and (max-width: $screenDesktop) {
 // }
-
 // @media screen and (max-width: $screenVerticleMobile) {
 // }
-
 // @media screen and (max-width: $screenMobile) {
 // }
