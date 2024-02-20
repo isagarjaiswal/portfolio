@@ -5,7 +5,7 @@
 
   --Accent: rgb(250, 188, 155);
 
-  --copy-btn-click:#203A2E;
+  --copy-btn-click: #203A2E;
   --copy-btn-hover-border: rgb(120, 120, 120);
   --green: rgb(18, 201, 113);
   --greenGB: rgb(16, 42, 30);
@@ -41,7 +41,7 @@
 
   --Accent: rgb(43, 43, 43);
 
-  --copy-btn-click:rgb(201, 236, 220);
+  --copy-btn-click: rgb(201, 236, 220);
   --copy-btn-hover-border: rgb(155, 158, 165);
 
   --green: rgb(8, 128, 70);
@@ -101,6 +101,27 @@ $screenDesktopMedium: 1270px;
     padding: 5px 10px;
   }
 }
+
+/* Define the mixin */
+@mixin slideInAnimation($duration: 0.5s, $distance: 30px, $timing-function: ease-in-out) {
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY($distance);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  animation-name: slideIn;
+  animation-duration: $duration;
+  animation-fill-mode: forwards;
+  animation-timing-function: $timing-function;
+}
+
+
 // @media screen and (max-width: $screenDesktopMedium) {
 // }
 // @media screen and (max-width: $screenDesktop) {

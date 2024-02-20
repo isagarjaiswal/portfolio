@@ -33,4 +33,6 @@
             font-style: italic;
         }
     }
+
+    @include slideInAnimation();
 }
