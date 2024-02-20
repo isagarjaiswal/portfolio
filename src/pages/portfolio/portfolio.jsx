@@ -25,6 +25,7 @@ export const Portfolio = () => {
                 {isMobileView ? <Navbar /> : <SideBar />}
             </div>
             <div className="main-content-box">
+
                 <Routes>
                     <Route exact path='/' element={<Homepage />} />
                     <Route exact path='/about' element={<About />} />
