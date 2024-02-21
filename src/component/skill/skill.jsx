@@ -5,11 +5,12 @@ import "./skill.scss"
 const skillsData = {
     Language: [`JavaScript`, `TypeScript`, `HTML`, `CSS`],
     Frontend: [`React`, `Redux`, `Context`],
-    Backend: [`NodeJs`, `ExpressJs`, `Postman`],
+    Backend: [`NodeJs`, `ExpresJs`, `Postman`],
     Database: [`MongoDB`, `Local Storage`, `Session Storage`, `Cookies`],
-    "Version Control": [`Git and Github`],
+    "Version Control": [`Git`, "Github"],
     "CI/CD": [`Github Action`, `Netlify`]
 }
+
 const SkillCard = ({ skillsData }) => {
     return (
         <div className='skills'>

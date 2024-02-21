@@ -38,6 +38,10 @@
         font-size: $text-h4;
         line-height: 30px;
         word-spacing: 1px;
+
+        .about__description-content {
+          margin-bottom: 20px;
+        }
       }
     }
 

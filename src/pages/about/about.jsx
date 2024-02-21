@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.scss";
 import { Experience, Skill } from "../../component";
+import myPhoto from "../../images/myProfile.png"
 
 export const About = () => {
   const experienceData = [
@@ -42,28 +43,21 @@ export const About = () => {
       <div className="about__header">
         <div className="about__personal-info">
           <div className="about__name-role">
-            <div className="about__name">Patryk Ilnicki</div>
-            <div className="about__role">Product Designer</div>
+            <div className="about__name">Sagar Jaiswal</div>
+            <div className="about__role">Mern Developer</div>
           </div>
           <div className="about__description">
-            <div>
-              I’m Patryk, a product designer and design system specialist from
-              Poland with over 9 years of experience focusing on user experience
-              and design systems to creating a user-centered design in SaaS
-              products.
+            <div className="about__description-content">
+              As a frontend developer based in Bhopal, India, I specialize in crafting clean, reusable code for enhanced readability and maintainability. With hands-on experience in technologies like React, JavaScript, CSS (SCSS), and Git, I am equipped to tackle complex challenges and deliver high-quality solutions.
             </div>
-
-            <div>
-              Co-creator at Tetrisly one of the most popular starter kits for
-              design systems. I had the opportunity to work with Phenom.com,
-              Bidroom.com or Perfops.net but also with many startups from around
-              the world as a Lead Designer.
+            <div className="about__description-content">
+              In my role, I've honed my skills across the full stack of web development, working on REST APIs, authentication flows, and responsive designs. With a Bachelor's degree in Computer Science, I'm dedicated to driving impactful projects and exceeding expectations.
             </div>
           </div>
         </div>
         <div className="about__profile-content">
           <img
-            src="https://framerusercontent.com/images/ASxqK23yrLOajDbgpUTdc9221SI.png"
+            src={myPhoto}
             className="about__profile-img"
             alt="sagar-profile-img"
           />

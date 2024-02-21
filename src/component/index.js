@@ -12,3 +12,5 @@ export { CopyBtn } from "./copyBtn/copyBtn"
 export { Skill } from "./skill/skill"
 export { Experience } from "./experience/experience"
 export { Chip } from "./chip/chip"
+export { SkillIcon } from "./skillIcon/skillIcon"
+

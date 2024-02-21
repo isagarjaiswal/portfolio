@@ -1,12 +1,13 @@
 import React from 'react'
-import ChatGptIcon from '../../icons/chatGptIcon';
-import "./chip.scss"
+import "./chip.scss";
+import { SkillIcon } from '../index';
 
-export const Chip = ({ img, heading }) => {
+export const Chip = ({ heading }) => {
+
     return (
         <div className='chip'>
             <div className="chatGptIcon">
-                <ChatGptIcon />
+                <SkillIcon iconName={heading} />
             </div>
             {heading && <div className='chip__heading'>{heading}</div>}
         </div>
