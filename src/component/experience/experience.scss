@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    @include slideInAnimation();
+    background-color: red;
 
 
     .experience-item {
@@ -36,6 +36,7 @@
         flex-direction: column;
         gap: 24px;
         font-size: $text-p1;
+        width: 100%;
 
         .compnay-role-experience {
           .experience-role {
@@ -48,7 +49,11 @@
           }
         }
 
-        .experience-description {}
+        .experience-description {
+          text-wrap: wrap;
+          width: 100%;
+          background-color: green;
+        }
       }
     }
 
@@ -77,14 +82,13 @@
       color: var(--secondary);
 
       .experience-date {
-        // font-size: 16px;
         width: 80vw !important;
 
         font-size: $text-p1;
       }
 
       .experience-content {
-        width: 90vw !important;
+        width: 100%;
         line-height: 24px;
       }
     }

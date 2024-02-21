@@ -14,26 +14,3 @@
 .tools__description {
     @include slideInAnimation();
 }
-
-.skills {
-    display: flex;
-    flex-direction: column;
-}
-
-.skills__category {
-    margin: 10px;
-}
-
-.skill-sub-heading {
-    font-size: $text-h3;
-    font-weight: 500;
-    margin: 20px 0;
-}
-
-.skill-container {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    overflow: hidden;
-    gap: 4px;
-}

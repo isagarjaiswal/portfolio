@@ -1,5 +1,6 @@
 import React from 'react'
 import "./experience.scss"
+
 export const Experience = ({ data, head }) => {
     return (
         <div className="experience-section">
@@ -15,6 +16,7 @@ export const Experience = ({ data, head }) => {
                                     <div className="experience-role">{experience.role}</div>
                                 </div>
                                 {experience.description && <div className="experience-description">{experience.description}</div>}
+
                             </div>
                         </div>
                         {data.length - 1 !== index && <div className="experience-row"></div>}
