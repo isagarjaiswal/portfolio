@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ResumeDownload = ({ dimension = "24" }) => {
+export const ResumeDownload = ({ dimension = "24" }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,5 +13,3 @@ const ResumeDownload = ({ dimension = "24" }) => {
         </svg>
     );
 }
-
-export default ResumeDownload

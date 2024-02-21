@@ -12,6 +12,10 @@ export { MenuIcon } from "./menuIcon";
 export { CrossIcon } from "./crossIcon";
 export { CopyIcon } from "./copyIcon";
 export { ResumeDone } from "./resumeDone";
+export { LocationIcon } from "./locationIcon.jsx";
+export { LinkdlnIconHome } from "./linkedlnIconHome.jsx"
+export { ResumeDownload } from "./resumeDownload.jsx"
+
 
 export { Html } from "./html"
 export { Css } from "./css"

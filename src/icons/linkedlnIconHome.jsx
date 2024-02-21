@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LinkdlnIconHome = () => {
+export const LinkdlnIconHome = () => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,3 @@ const LinkdlnIconHome = () => {
         </svg>
     );
 }
-
-
-
-export default LinkdlnIconHome
