@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background-color: red;
 
 
     .experience-item {
@@ -52,7 +51,6 @@
         .experience-description {
           text-wrap: wrap;
           width: 100%;
-          background-color: green;
         }
       }
     }

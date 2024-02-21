@@ -2,6 +2,7 @@ import React from "react";
 import "./about.scss";
 import { Experience, Skill } from "../../component";
 import myPhoto from "../../images/myProfile.png"
+import myPhotoPNG from "../../images/myProfilePNG.png"
 
 export const About = () => {
   const experienceData = [
@@ -59,6 +60,10 @@ export const About = () => {
             className="about__profile-img"
             alt="sagar-profile-img"
           />
+          <img
+            className="about__profile-img"
+            src={myPhotoPNG}
+            alt="sagar-profile-img" />
         </div>
       </div>
       <Skill />
