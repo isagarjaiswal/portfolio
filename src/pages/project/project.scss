@@ -1,0 +1,27 @@
+@import "../../component/variable.scss";
+
+.projects-container {
+    color: var(--primary);
+    width: 100%;
+    height: fit-content;
+
+    .projects-heading {
+        font-size: $text-h1;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .projects-description {
+        color: var(--secondary);
+        font-size: $text-h4;
+        margin-bottom: 50px;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+@import "../variable.scss";
+
+.project-card {
+  cursor: pointer;
+  margin-top: 60px;
+  width: 48%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .project-img-container {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    .project-img {
+      object-fit: cover;
+      padding: 2px;
+      width: 100%;
+      height: 100%;
+
+      transition: all 0.5s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .title {
+    color: var(--primary);
+    font-size: $text-h4;
+  }
+
+  .co-creator {
+    font-size: $text-h5;
+    color: var(--secondary);
+  }
+}
+
+
+
+@media screen and (max-width: $screenVerticleMobile) {
+  .project-card {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-height: $screenVerticleMobile) {
+  .project-card {
+    .project-img-container {
+      height: 400px;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import "./homepage.scss"
 import { useNavigate } from 'react-router-dom';
-import { LinkItem } from '../../component/index';
+import "./homepage.scss"
 import { LocationIcon, LinkdlnIconHome, ResumeDone, ResumeDownload } from '../../icons/index';
 import { Project, Blog } from '../index';
+import { LinkItem } from '../../component/index';
 
 export const Homepage = () => {
   const navigate = useNavigate();
@@ -14,9 +14,7 @@ export const Homepage = () => {
       setIsDownload(false);
     }, 2000);
   };
-
   const RESUME_LINK = "https://docs.google.com/document/d/1cO_WST3hRMSxJDEVjT4FJyK6FC8LL0FH6mxwGwmXugs/export?format=pdf"
-
 
   return (
     <>
