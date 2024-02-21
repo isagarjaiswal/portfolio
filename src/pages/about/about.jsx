@@ -20,7 +20,6 @@ export const About = () => {
         "Designed intuitive and user-friendly interfaces for web applications, focusing on creating wireframes, prototypes, and visual designs. Conducted user research and usability testing to gather feedback for iterative design improvements.",
     },
   ];
-
   const educationData = [
     {
       date: "September 2016 - May 2020",
@@ -37,7 +36,6 @@ export const About = () => {
         "Achieved academic excellence while participating in extracurricular activities such as coding competitions and science fairs.",
     },
   ];
-
   return (
     <div className="about-container">
       <div className="about__header">
@@ -51,7 +49,7 @@ export const About = () => {
               As a frontend developer based in Bhopal, India, I specialize in crafting clean, reusable code for enhanced readability and maintainability. With hands-on experience in technologies like React, JavaScript, CSS (SCSS), and Git, I am equipped to tackle complex challenges and deliver high-quality solutions.
             </div>
             <div className="about__description-content">
-              In my role, I've honed my skills across the full stack of web development, working on REST APIs, authentication flows, and responsive designs. With a Bachelor's degree in Computer Science, I'm dedicated to driving impactful projects and exceeding expectations.
+               I've honed my skills across the full stack of web development, working on REST APIs, authentication flows, and responsive designs. With a Bachelor's degree in Computer Science, I'm dedicated to driving impactful projects and exceeding expectations.
             </div>
           </div>
         </div>

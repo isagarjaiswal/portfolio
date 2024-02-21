@@ -6,6 +6,7 @@
   flex-direction: column;
   gap: 120px;
   color: var(--primary);
+  background-color: red;
   @include slideInAnimation();
 
   .about__header {
@@ -61,17 +62,51 @@
       }
     }
   }
+}
 
-  .divider-education-experience {
-    width: 90%;
-    margin-left: -10px;
-    padding: 1px;
-    background-color: var(--border);
-  }
+.divider-education-experience {
+  width: 100%;
+  overflow: auto;
+  height: 2px;
+  background-color: var(--border);
+}
 
-  @media screen and (max-width: $screenVerticleMobile) {
-    .about__profile-content {
-      display: none;
+@media screen and (max-width: $screenVerticleMobile) {
+
+  .about-container {
+    gap: 60px;
+
+    .about__header {
+
+      .about__personal-info {
+
+        .about__name-role {
+          .about__name {
+            font-size: $text-h1m;
+          }
+
+          .about__role {
+            font-weight: 400;
+            font-size: $text-h1m;
+            color: var(--secondary);
+          }
+        }
+
+        .about__description {
+          color: var(--secondary);
+          font-size: $text-h5;
+          line-height: 30px;
+          word-spacing: 1px;
+
+          .about__description-content {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .about__profile-content {
+        display: none;
+      }
     }
   }
 }
