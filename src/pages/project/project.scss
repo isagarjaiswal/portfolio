@@ -4,6 +4,7 @@
     color: var(--primary);
     width: 100%;
     height: fit-content;
+    @include slideInAnimation();
 
     .projects-heading {
         font-size: $text-h1;

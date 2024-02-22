@@ -3,6 +3,7 @@
 .portfolio-container {
   display: flex;
   background-color: var(--bg);
+  @include slideInAnimation();
 
   .nav-bar-box {
     position: fixed;
