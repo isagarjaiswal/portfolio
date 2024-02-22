@@ -1,0 +1,5 @@
+export { experienceData } from "./experienceData"
+export { educationData } from "./eductaionData"
+export { blogsData } from "./blog"
+export { skillsData } from "./skill"
+export { projectsData } from "./project"

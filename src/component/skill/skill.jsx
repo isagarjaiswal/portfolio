@@ -1,21 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { SkillCard } from '../index';
 import "./skill.scss"
+import { skillsData } from '../../data';
 
-const skillsData = {
-    Language: [`JavaScript`, `TypeScript`, `HTML`, `CSS`],
-    Frontend: [`React`, `Redux`, `Context`],
-    Backend: [`NodeJs`, `ExpresJs`, `Postman`],
-    Database: [`MongoDB`, `Local Storage`, `Session Storage`, `Cookies`],
-    "Version Control": [`Git`, "Github"],
-    "CI/CD": [`Github Action`, `Netlify`]
-}
 
 export const Skill = () => {
-    const [data, setData] = useState(skillsData)
-    useEffect(() => {
-        setData(skillsData)
-    }, [])
+    const data = skillsData;
     return (
         <div className='tools'>
             <div className="tools__heading">Skills</div>
