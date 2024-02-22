@@ -1,6 +1,5 @@
 @import "../variable.scss";
 
-
 @media screen and (max-width: $screenVerticleMobile) {
   .nav-bar {
     display: flex;
@@ -8,7 +7,6 @@
     align-items: center;
     width: 98vw;
     z-index: 111;
-
     height: min-content;
     margin: 5px;
     transition: all 0.1s linear;

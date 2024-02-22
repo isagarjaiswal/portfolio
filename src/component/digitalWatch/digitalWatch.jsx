@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './digitalWatch.scss';
 
 export const DigitalWatch = () => {
     const [time, setTime] = useState(new Date().toLocaleTimeString());
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setTime(new Date().toLocaleTimeString());
-        }, 1000);
-        return () => clearInterval(intervalId);
+    const updateTime = useCallback(() => {
+        setTime(new Date().toLocaleTimeString());
     }, []);
+
+    useEffect(() => {
+        const intervalId = setInterval(updateTime, 1000);
+        return () => clearInterval(intervalId);
+    }, [updateTime]);
+
     return <div className='watch'>{time}</div>;
 };

@@ -8,9 +8,9 @@ export const Footer = () => {
             <div className="footer-line"></div>
             <div className="footer-content">
                 <div className="footer-author">Made by <span className='author'>Sagar Jaiswal</span></div>
-                <div className="footer-year">&copy; 2024 portfolio</div>
+                <div className="footer-year">&copy; {new Date().getFullYear()} portfolio</div>
                 <DigitalWatch />
             </div>
         </footer>
     );
-}
+};

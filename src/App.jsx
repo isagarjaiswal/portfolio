@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ isLightTheme, toggleTheme }}>
-      <div className={`main-container ${isLightTheme ? 'light' : ''}`}>
+      <div className={`main-container  ${isLightTheme ? 'light' : ''}`}>
         <Portfolio />
       </div>
     </ThemeContext.Provider>

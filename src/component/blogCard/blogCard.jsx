@@ -14,9 +14,11 @@ export const BlogCard = ({ blogData }) => {
                 <div className="blog-date">{date}</div>
                 <div className="blog-heading">{heading}</div>
                 <div className="blog-description">{description}</div>
-                <span className="blog-btn" onClick={toggleDetails}>
-                    Read More
-                </span>
+                {mediumLink && (
+                    <span className="blog-btn" onClick={toggleDetails}>
+                        Read More
+                    </span>
+                )}
             </div>
             <div className="blog-img-container">
                 <div className="blog-img"></div>

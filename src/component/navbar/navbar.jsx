@@ -9,7 +9,7 @@ export const Navbar = () => {
     const handleNav = () => {
         setTimeout(() => {
             setIsExpand(!isExpand)
-        }, 300)
+        }, 200)
     }
 
     return (
@@ -24,7 +24,7 @@ export const Navbar = () => {
                 </div>
             </div>
             <div className="nav-bar-line"></div>
-            { !isExpand && <div className="nav-bar-lower-body">
+            {isExpand && <div className="nav-bar-lower-body">
                 <SidebarMenuLinks handleNav={handleNav} />
                 <div className="nav-bar-line"></div>
                 <SocialMediaLinks />

@@ -17,7 +17,6 @@
     flex-direction: column;
     gap: 40px;
 
-
     .experience-item {
       width: 100%;
       display: flex;
@@ -73,15 +72,12 @@
     .experience-item {
       width: 100%;
       display: flex;
-
       flex-direction: column;
-
       gap: 32px;
       color: var(--secondary);
 
       .experience-date {
         width: 80vw !important;
-
         font-size: $text-p1;
       }
 
