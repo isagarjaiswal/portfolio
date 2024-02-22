@@ -4,13 +4,13 @@ import "./theme.scss"
 import { DarkMode, LightMode } from '../../icons';
 
 export const Theme = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { isLightTheme, toggleTheme } = useContext(ThemeContext);
+    
 
     return (
         <div onClick={toggleTheme} className='side-mode-container' >
-            
             <div className='side-mode'>
-                {theme ? (<LightMode />) : (<DarkMode />)}
+                {isLightTheme ? (<DarkMode />) : (<LightMode />)}
             </div>
         </div >
     );
