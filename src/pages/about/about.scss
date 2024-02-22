@@ -66,9 +66,7 @@
 
 .about__profile-content {
   margin: 50px auto;
-
   width: 200px;
-  // height: 200px;
   position: relative;
   transition: all 0.3s ease;
 
@@ -77,7 +75,7 @@
     box-shadow: 0px 10px 15px -3px rgba(233, 233, 233, 0.5);
     border-radius: 8px;
     object-fit: cover;
-    transition: all 0.3s ease;
+    transition: all 0.3s linear;
   }
 
   .about__profile-img:last-child {
@@ -89,18 +87,21 @@
     margin: auto;
     transform: translateY(25%);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.3s linear;
   }
 
-  &:hover .about__profile-img:first-child {
+  &:hover,
+  &:active .about__profile-img:first-child {
     transform: perspective(250px) rotateX(40deg) translateY(-5%) translateZ(0)
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:active::before {
     opacity: 1;
   }
 
-  &:hover .about__profile-img:last-child {
+  &:hover,
+  &:active .about__profile-img:last-child {
     opacity: 1;
     transform: translateY(-10px);
   }
