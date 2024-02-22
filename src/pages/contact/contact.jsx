@@ -4,9 +4,11 @@ import { CopyBtn } from "../../component";
 
 export const Contact = () => {
   const handleCalendlyClick = () => {
+    
     const calendlyLink = "https://calendly.com/isagarjaiswal";
     window.open(calendlyLink, "_blank");
   };
+
   return (
     <div className="contact-container">
       <div className="contact-header">
