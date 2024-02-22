@@ -7,6 +7,6 @@ export const educationData = [
     {
         date: "June 2018 - May 2019",
         role: "Schooling",
-        company: "Sanskar Academy , Pachore, Bhopal, India"
+        company: "Sanskar Academy , Pachore, India"
     }
 ];
