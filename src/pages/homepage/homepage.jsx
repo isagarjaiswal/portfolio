@@ -8,7 +8,7 @@ import { LinkItem } from '../../component/index';
 export const Homepage = () => {
   const navigate = useNavigate();
   const [isDownload, setIsDownload] = useState(false)
-  
+
   const toggleDownload = () => {
     setIsDownload(true);
     setTimeout(() => {
@@ -36,7 +36,7 @@ export const Homepage = () => {
         <div className="header-location"><LocationIcon /> Bhopal, India</div>
 
         <div className="content">
-          Frontend developer with expertise in creating clean, reusable code for improved user experiences.
+          MERN developer with expertise in creating clean, reusable code for improved user experiences.
         </div>
         <div className="footer">
           <button className="footer-btn-about" onClick={() => navigate("/about")}>
