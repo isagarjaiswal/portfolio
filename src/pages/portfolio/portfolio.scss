@@ -3,10 +3,11 @@
 .portfolio-container {
   display: flex;
   background-color: var(--bg);
-  @include slideInAnimation();
+  // @include slideInAnimation();
 
   .nav-bar-box {
     position: fixed;
+    top: 0;
     height: 100vh;
     width: 18vw;
     min-width: 260px;

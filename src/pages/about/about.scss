@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 120px;
   color: var(--primary);
-  @include slideInAnimation();
+  // @include slideInAnimation();
 
   .about__header {
     display: flex;

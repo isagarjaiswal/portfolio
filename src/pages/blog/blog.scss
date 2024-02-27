@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 20px;
   color: var(--primary);
-  @include slideInAnimation();
+  // @include slideInAnimation();
 
   .blogs-heading {
     font-size: $text-h1;
