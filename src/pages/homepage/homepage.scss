@@ -7,11 +7,11 @@
   color: var(--primary);
   gap: 32px;
   @include slideInAnimation();
-
 }
 
 .available-for-work-container {
   display: flex;
+
   background-color: var(--greenGB);
   align-items: center;
   gap: 5px;
@@ -31,7 +31,8 @@
   font-size: $text-p2;
 }
 
-.header {}
+.header {
+}
 
 .header-title {
   display: flex;
@@ -41,7 +42,7 @@
 }
 
 .clapping-icon {
-  color: #0A66C2;
+  color: #0a66c2;
   margin-left: 10px;
   animation: shadowAnimation 2s infinite;
   cursor: pointer;
@@ -151,7 +152,6 @@
     transform: translateX(0);
   }
 }
-
 
 .additional-footer {
   margin-top: 40px;
