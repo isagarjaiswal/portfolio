@@ -6,7 +6,6 @@ export const ThemeContext = createContext();
 const App = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
 
-  console.log({ isLightTheme });
 
   const toggleTheme = () => {
     setIsLightTheme(prevTheme => !prevTheme);

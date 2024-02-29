@@ -25,6 +25,5 @@ const skillIcons = {
 export const SkillIcon = ({ iconName }) => {
 
     const iconComponent = skillIcons[iconName];
-    console.log({ iconName, iconComponent });
     return iconComponent || <Js />;
 };
