@@ -20,8 +20,7 @@ export const Homepage = () => {
       setIsDownload(false);
     }, 2000);
   };
-  const RESUME_LINK ="https://drive.google.com/file/d/1fqnTZ7WB7_UIMN2wrf-9Fna-0uMIIB_3/view?usp=drive_link"
-    // "https://docs.google.com/document/d/1cO_WST3hRMSxJDEVjT4FJyK6FC8LL0FH6mxwGwmXugs/export?format=pdf";
+  const RESUME_LINK ="https://docs.google.com/document/d/1oheqyoGMY9uM5vHnI6LfcBPFxLk72CspkIito1SEZU8/edit?usp=sharing"
 
   return (
     <>
@@ -62,7 +61,7 @@ export const Homepage = () => {
           </button>
           <button className="resume-btn" onClick={toggleDownload}>
             <a
-              href={`${RESUME_LINK}`}
+              href={RESUME_LINK}
               rel="noreferrer noopener"
               target="_blank"
               download
