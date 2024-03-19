@@ -20,8 +20,8 @@ export const Homepage = () => {
       setIsDownload(false);
     }, 2000);
   };
-  const RESUME_LINK =
-    "https://drive.google.com/file/d/1fqnTZ7WB7_UIMN2wrf-9Fna-0uMIIB_3/view?usp=drive_link";
+  const RESUME_LINK ="https://drive.google.com/file/d/1fqnTZ7WB7_UIMN2wrf-9Fna-0uMIIB_3/view?usp=drive_link"
+    // "https://docs.google.com/document/d/1cO_WST3hRMSxJDEVjT4FJyK6FC8LL0FH6mxwGwmXugs/export?format=pdf";
 
   return (
     <>
