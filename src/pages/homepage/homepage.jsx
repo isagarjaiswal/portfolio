@@ -21,7 +21,7 @@ export const Homepage = () => {
     }, 2000);
   };
   const RESUME_LINK =
-    "https://docs.google.com/document/d/1cO_WST3hRMSxJDEVjT4FJyK6FC8LL0FH6mxwGwmXugs/export?format=pdf";
+    "https://docs.google.com/document/d/1oheqyoGMY9uM5vHnI6LfcBPFxLk72CspkIito1SEZU8/edit?usp=sharing";
 
   return (
     <>
