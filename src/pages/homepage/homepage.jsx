@@ -20,7 +20,8 @@ export const Homepage = () => {
       setIsDownload(false);
     }, 2000);
   };
-  const RESUME_LINK ="https://docs.google.com/document/d/1oheqyoGMY9uM5vHnI6LfcBPFxLk72CspkIito1SEZU8/edit?usp=sharing"
+  const RESUME_LINK =
+    "https://docs.google.com/document/d/1oheqyoGMY9uM5vHnI6LfcBPFxLk72CspkIito1SEZU8/edit?usp=sharing";
 
   return (
     <>
@@ -45,12 +46,12 @@ export const Homepage = () => {
         </div>
 
         <div className="header-location">
-          <LocationIcon /> Bhopal, India
+          <LocationIcon /> Bengaluru, India
         </div>
 
         <div className="content">
-          MERN developer with expertise in creating clean, reusable code for
-          improved user experiences.
+          Full-Stack Developer with expertise in creating clean, reusable code
+          for improved user experiences.
         </div>
         <div className="footer">
           <button

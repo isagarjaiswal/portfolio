@@ -6,7 +6,7 @@ export const CopyBtn = () => {
   const [isCopied, setIsCopied] = useState(false);
 
   const copyToClipboard = () => {
-    const email = "sagarjaiswal81555@gmail.com";
+    const email = "engsagarjaiswal@gmail.com";
     navigator.clipboard
       .writeText(email)
       .then(() => {

@@ -39,6 +39,12 @@
     font-size: $text-h5;
     color: var(--secondary);
   }
+  .description {
+    font-size: $text-p2;
+    color: var(--text-color);
+    white-space: pre-line;
+    line-height: 1.5;
+  }
 }
 
 

@@ -17,7 +17,7 @@ export const PersonalDetails = () => {
             </div>
             <div className="role-name-container">
                 <div className="name-container">Sagar Jaiswal</div>
-                <div className="role-container">MERN Developer</div>
+                <div className="role-container">Full-Stack Developer</div>
             </div>
         </div>
     )

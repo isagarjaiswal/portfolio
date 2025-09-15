@@ -20,7 +20,7 @@ export const Contact = () => {
           <div className="contact-line"></div>
           <div className="email-phone-contact">
             <div className="email-container-contact">
-              <div className="address">sagarjaiswal81555@gmail.com</div>
+              <div className="address">engsagarjaiswal@gmail.com</div>
               <div className="label">E-mail</div>
             </div>
             <div className="email-container-contact">

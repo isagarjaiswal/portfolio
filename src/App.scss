@@ -5,12 +5,15 @@
   src: url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
+body{
+  background-color: var(--bg);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  // border: 1px solid red;
 }
 
 .main-container {
