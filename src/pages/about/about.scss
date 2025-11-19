@@ -1,4 +1,4 @@
-@import "../../component/variable.scss";
+@import '../../component/variable.scss';
 
 .about-container {
   // overflow: hidden;
@@ -60,7 +60,6 @@
     //     object-fit: cover;
     //   }
     // }
-
   }
 }
 
@@ -92,7 +91,7 @@
   }
 
   &:hover .about__profile-img:first-child {
-    transform: perspective(250px) rotateX(40deg) translateY(-5%) translateZ(0)
+    transform: perspective(250px) rotateX(40deg) translateY(-5%) translateZ(0);
   }
 
   &:hover::before {
@@ -105,7 +104,6 @@
   }
 }
 
-
 .divider-education-experience {
   width: 100%;
   overflow: auto;
@@ -114,14 +112,11 @@
 }
 
 @media screen and (max-width: $screenVerticleMobile) {
-
   .about-container {
     gap: 60px;
 
     .about__header {
-
       .about__personal-info {
-
         .about__name-role {
           .about__name {
             font-size: $text-h1m;

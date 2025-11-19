@@ -1,41 +1,41 @@
-import React from "react";
-import "./contact.scss";
-import { CopyBtn } from "../../component";
-import { gtagEvent } from "../../lib/analytics";
+import React from 'react';
+import './contact.scss';
+import { CopyBtn } from '../../component';
+import { gtagEvent } from '../../lib/analytics';
 
 export const Contact = () => {
   const handleCalendlyClick = () => {
     gtagEvent({
-      action: "schedule_call_click",
-      category: "contact",
-      label: "Calendly CTA"
+      action: 'schedule_call_click',
+      category: 'contact',
+      label: 'Calendly CTA',
     });
 
-    const calendlyLink = "https://calendly.com/isagarjaiswal";
-    window.open(calendlyLink, "_blank");
+    const calendlyLink = 'https://calendly.com/isagarjaiswal';
+    window.open(calendlyLink, '_blank');
   };
 
   const handleEmailClick = () => {
     gtagEvent({
-      action: "email_click",
-      category: "contact",
-      label: "Email Display"
+      action: 'email_click',
+      category: 'contact',
+      label: 'Email Display',
     });
   };
 
   const handlePhoneClick = () => {
     gtagEvent({
-      action: "phone_click",
-      category: "contact",
-      label: "Phone Display"
+      action: 'phone_click',
+      category: 'contact',
+      label: 'Phone Display',
     });
   };
 
   const handleMessageSubmit = () => {
     gtagEvent({
-      action: "contact_form_submit",
-      category: "contact",
-      label: "Contact Form Button"
+      action: 'contact_form_submit',
+      category: 'contact',
+      label: 'Contact Form Button',
     });
   };
 
@@ -54,7 +54,7 @@ export const Contact = () => {
             <div
               className="email-container-contact"
               onClick={handleEmailClick}
-              style={{ cursor: "pointer" }}
+              style={{ cursor: 'pointer' }}
             >
               <div className="address">engsagarjaiswal@gmail.com</div>
               <div className="label">E-mail</div>
@@ -63,7 +63,7 @@ export const Contact = () => {
             <div
               className="email-container-contact"
               onClick={handlePhoneClick}
-              style={{ cursor: "pointer" }}
+              style={{ cursor: 'pointer' }}
             >
               <div className="address">+91 8959829465</div>
               <div className="label">Phone</div>
@@ -94,10 +94,7 @@ export const Contact = () => {
             className="text-area-contact"
           ></textarea>
 
-          <button
-            className="contact-form-btn"
-            onClick={handleMessageSubmit}
-          >
+          <button className="contact-form-btn" onClick={handleMessageSubmit}>
             Send Message
           </button>
         </div>

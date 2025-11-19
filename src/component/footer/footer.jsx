@@ -1,6 +1,6 @@
-import React from "react";
-import "./footer.scss";
-import { DigitalWatch } from "../digitalWatch/digitalWatch";
+import React from 'react';
+import './footer.scss';
+import { DigitalWatch } from '../digitalWatch/digitalWatch';
 
 export const Footer = () => {
   return (

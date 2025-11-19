@@ -1,12 +1,12 @@
-import React from "react";
-import "./personalDetails.scss";
-import { useNavigate } from "react-router-dom";
-import myPhoto from "../../images/myProfile.png";
+import React from 'react';
+import './personalDetails.scss';
+import { useNavigate } from 'react-router-dom';
+import myPhoto from '../../images/myProfile.png';
 
 export const PersonalDetails = () => {
   const navigate = useNavigate();
 
-  const handleNavigate = () => navigate("/");
+  const handleNavigate = () => navigate('/');
 
   return (
     <div className={`side-profile-container`}>

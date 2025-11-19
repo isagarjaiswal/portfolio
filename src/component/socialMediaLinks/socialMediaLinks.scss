@@ -1,4 +1,4 @@
-@import "../variable.scss";
+@import '../variable.scss';
 
 .side-social-item-container {
   display: flex;
@@ -27,15 +27,15 @@
   }
 
   .side-social-item-twitter {
-    @include positioned-social-tooltip("twitter");
+    @include positioned-social-tooltip('twitter');
   }
 
   .side-social-item-linkedln {
-    @include positioned-social-tooltip("Linkedln");
+    @include positioned-social-tooltip('Linkedln');
   }
 
   .side-social-item-leetcode {
-    @include positioned-social-tooltip("leetcode");
+    @include positioned-social-tooltip('leetcode');
   }
 }
 

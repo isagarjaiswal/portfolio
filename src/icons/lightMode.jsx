@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export function LightMode() {
   return (
@@ -13,4 +13,3 @@ export function LightMode() {
     </svg>
   );
 }
-

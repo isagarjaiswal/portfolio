@@ -4,13 +4,11 @@ import { useLocation } from 'react-router-dom';
 import { gtagPageview } from '../lib/analytics';
 
 export const GAListener = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    useEffect(() => {
-       
-            gtagPageview(location.pathname + location.search);
-        
-    }, [location]);
+  useEffect(() => {
+    gtagPageview(location.pathname + location.search);
+  }, [location]);
 
-    return null;
-}
+  return null;
+};

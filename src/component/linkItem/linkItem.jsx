@@ -1,7 +1,7 @@
 export const LinkItem = ({ link, icon, className }) => {
   const handleClick = () => {
     if (link) {
-      window.open(link, "_blank");
+      window.open(link, '_blank');
     }
   };
 

@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import "./navbar.scss";
+import React, { useState } from 'react';
+import './navbar.scss';
 import {
   PersonalDetails,
   SidebarMenuLinks,
   SocialMediaLinks,
   Theme,
-} from "../index";
-import { MenuIcon, CrossIcon } from "../../icons/index";
+} from '../index';
+import { MenuIcon, CrossIcon } from '../../icons/index';
 
 export const Navbar = () => {
   const [isExpand, setIsExpand] = useState(true);

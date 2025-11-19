@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const CrossIcon = () => {
   return (
@@ -7,10 +7,9 @@ export const CrossIcon = () => {
       width="24"
       height="24"
       viewBox="0 -960 960 960"
-      fill='currentColor'
+      fill="currentColor"
     >
       <path d="M256-200l-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224z"></path>
     </svg>
   );
-}
-
+};

@@ -1,11 +1,10 @@
-@import "../variable.scss";
+@import '../variable.scss';
 
 .side-mode-container {
   order: 5;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   .side-mode {
     display: flex;

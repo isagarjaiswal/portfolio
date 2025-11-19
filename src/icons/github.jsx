@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export const Github = () => {
   return (
-    <svg viewBox="0 0 128 128" width={"24"} >
+    <svg viewBox="0 0 128 128" width={'24'}>
       <g fill="currentColor">
         <path
           fillRule="evenodd"
@@ -13,4 +13,4 @@ export const Github = () => {
       </g>
     </svg>
   );
-}
+};

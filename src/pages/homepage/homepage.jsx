@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./homepage.scss";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './homepage.scss';
 import {
   LocationIcon,
   LinkdlnIconHome,
   ResumeDone,
   ResumeDownload,
-} from "../../icons/index";
-import { Project, Blog } from "../index";
-import { LinkItem } from "../../component/index";
-import { gtagEvent } from "../../lib/analytics";
+} from '../../icons/index';
+import { Project, Blog } from '../index';
+import { LinkItem } from '../../component/index';
+import { gtagEvent } from '../../lib/analytics';
 
 export const Homepage = () => {
   const navigate = useNavigate();
@@ -19,9 +19,9 @@ export const Homepage = () => {
     setIsDownload(true);
 
     gtagEvent({
-      action: "resume_download_click",
-      category: "engagement",
-      label: "Resume Button"
+      action: 'resume_download_click',
+      category: 'engagement',
+      label: 'Resume Button',
     });
 
     setTimeout(() => {
@@ -31,29 +31,28 @@ export const Homepage = () => {
 
   const handleAboutClick = () => {
     gtagEvent({
-      action: "about_button_click",
-      category: "navigation",
-      label: "About Page CTA"
+      action: 'about_button_click',
+      category: 'navigation',
+      label: 'About Page CTA',
     });
 
-    navigate("/about");
+    navigate('/about');
   };
 
   const handleLinkedInClick = () => {
     gtagEvent({
-      action: "linkedin_click",
-      category: "social",
-      label: "LinkedIn Profile"
+      action: 'linkedin_click',
+      category: 'social',
+      label: 'LinkedIn Profile',
     });
   };
 
   const RESUME_LINK =
-    "https://docs.google.com/document/d/1oheqyoGMY9uM5vHnI6LfcBPFxLk72CspkIito1SEZU8/edit?usp=sharing";
+    'https://docs.google.com/document/d/1oheqyoGMY9uM5vHnI6LfcBPFxLk72CspkIito1SEZU8/edit?usp=sharing';
 
   return (
     <>
       <div className="container">
-
         <div className="available-for-work-container">
           <div className="dot-icon-container"></div>
           <div className="available-for-work">Available for work</div>
@@ -87,10 +86,7 @@ export const Homepage = () => {
         </div>
 
         <div className="footer">
-          <button
-            className="footer-btn-about"
-            onClick={handleAboutClick}
-          >
+          <button className="footer-btn-about" onClick={handleAboutClick}>
             About
           </button>
 

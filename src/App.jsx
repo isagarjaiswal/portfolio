@@ -1,15 +1,14 @@
 import React, { createContext, useState } from 'react';
 import { Portfolio } from './pages/index';
 import GAListener from './components/GA/GAListener';
-import "./App.scss";
+import './App.scss';
 export const ThemeContext = createContext();
 
 const App = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
 
-
   const toggleTheme = () => {
-    setIsLightTheme(prevTheme => !prevTheme);
+    setIsLightTheme((prevTheme) => !prevTheme);
   };
 
   return (
