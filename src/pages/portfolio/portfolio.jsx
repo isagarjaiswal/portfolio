@@ -3,6 +3,7 @@ import './portfolio.scss';
 import { Routes, Route } from 'react-router-dom';
 import { About, Blog, Contact, Homepage, Project } from '../index';
 import { SideBar, Navbar, Footer, NotFound } from '../../component/index';
+import { gtagEvent } from '../../lib/analytics';
 
 export const Portfolio = () => {
   const [isMobileView, setIsMobileView] = useState(false);
@@ -19,14 +20,14 @@ export const Portfolio = () => {
     gtagEvent({
       action: 'layout_switch',
       category: 'device',
-      label: isMobile ? 'Mobile view' : 'Desktop View',
+      label: isMobileView ? 'Mobile view' : 'Desktop View',
     });
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isMobileView]);
 
   return (
     <div className="portfolio-container">

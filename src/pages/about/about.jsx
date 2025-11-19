@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './about.scss';
 import { Experience, Skill } from '../../component';
 import myPhoto from '../../images/myProfile.png';
 import myPhotoPNG from '../../images/myProfilePNG.png';
 import { educationData, experienceData } from '../../data/index';
+import { gtagEvent } from '../../lib/analytics';
 
 export const About = () => {
   useEffect(() => {
