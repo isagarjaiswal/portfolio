@@ -19,7 +19,8 @@
     "eject": "react-scripts eject",
     "format": "prettier --write .",
     "lint": "eslint . --ext js,jsx",
-    "prebuild": "node scripts/generate-sitemap.js"
+    "prebuild": "node scripts/generate-sitemap.js",
+    "brobuild": "npx update-browserslist-db@latest --quiet"
   },
   "eslintConfig": {
     "extends": [
