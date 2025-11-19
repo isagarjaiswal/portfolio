@@ -1,19 +1,19 @@
-import React from "react";
-import "./about.scss";
-import { Experience, Skill } from "../../component";
-import myPhoto from "../../images/myProfile.png";
-import myPhotoPNG from "../../images/myProfilePNG.png";
-import { educationData, experienceData } from "../../data/index";
+import React, { useEffect } from 'react';
+import './about.scss';
+import { Experience, Skill } from '../../component';
+import myPhoto from '../../images/myProfile.png';
+import myPhotoPNG from '../../images/myProfilePNG.png';
+import { educationData, experienceData } from '../../data/index';
+import { gtagEvent } from '../../lib/analytics';
 
 export const About = () => {
   useEffect(() => {
+    gtagEvent({
+      action: 'about_page_view',
+      category: 'page_view',
+      label: 'About Page',
+    });
 
-      gtagEvent({
-        action: "about_page_view",
-        category: "page_view",
-        label: "About Page",
-      });
- 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
@@ -56,9 +56,9 @@ export const About = () => {
         </div>
       </div>
       <Skill />
-      <Experience data={experienceData} head={"Experience"} />
+      <Experience data={experienceData} head={'Experience'} />
       <div className="divider-education-experience"></div>
-      <Experience data={educationData} head={"Education"} />
+      <Experience data={educationData} head={'Education'} />
     </div>
   );
 };

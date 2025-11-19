@@ -1,15 +1,16 @@
-import React, { useEffect } from "react";
-import "./blog.scss";
-import { BlogCard } from "../../component/index";
-import { blogsData } from "../../data";
+import React, { useEffect } from 'react';
+import './blog.scss';
+import { BlogCard } from '../../component/index';
+import { blogsData } from '../../data';
+import { gtagEvent } from '../../lib/analytics';
 
 export const Blog = () => {
   const data = blogsData;
   useEffect(() => {
     gtagEvent({
-      action: "blog_page_view",
-      category: "page_view",
-      label: "Blog Page",
+      action: 'blog_page_view',
+      category: 'page_view',
+      label: 'Blog Page',
     });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

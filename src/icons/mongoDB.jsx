@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export const MongoDB = () => {
   return (
-    <svg viewBox="0 0 128 128" fill='currentColor' width={"24"}>
+    <svg viewBox="0 0 128 128" fill="currentColor" width={'24'}>
       <path
         // fill="#439934"
         fillRule="evenodd"
@@ -101,4 +101,4 @@ export const MongoDB = () => {
       ></path>
     </svg>
   );
-}
+};

@@ -1,33 +1,33 @@
-@import "../variable.scss";
+@import '../variable.scss';
 
 .copy-btn {
-    padding: 12px 18px;
-    text-decoration: none;
-    font-size: $text-p1;
-    font-weight: 400;
-    border-radius: 10px;
-    border: none;
-    color: var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: $text-p1;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
 
-    background-color: var(--bg1);
-    border: 1px solid var(--ghost-bg-pressed);
+  background-color: var(--bg1);
+  border: 1px solid var(--ghost-bg-pressed);
 
-    &:hover {
-        border-color: var(--copy-btn-hover-border);
-    }
+  &:hover {
+    border-color: var(--copy-btn-hover-border);
+  }
 }
 
 .copy-btn-click {
-    background-color: var(--copy-btn-click);
+  background-color: var(--copy-btn-click);
 }
 
 @media screen and (max-width: $screenVerticleMobile) {
-    .copy-btn {
-        width: 100%;
-    }
+  .copy-btn {
+    width: 100%;
+  }
 }

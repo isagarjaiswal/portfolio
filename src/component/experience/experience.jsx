@@ -1,5 +1,5 @@
-import React from "react";
-import "./experience.scss";
+import React from 'react';
+import './experience.scss';
 export const Experience = ({ data, head }) => {
   return (
     <div className="experience-section">

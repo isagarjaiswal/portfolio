@@ -1,6 +1,6 @@
 Certainly! Here's the Markdown content that you can copy directly into your `README.md` file:
 
-```markdown
+````markdown
 # Portfolio Project
 
 This is my portfolio project showcasing my skills, projects, and experiences as a ReactJS and SCSS developer.
@@ -36,6 +36,7 @@ To view the portfolio locally, follow these steps:
    ```bash
    git clone https://github.com/isagarjaiswal/portfolio.git
    ```
+````
 
 2. Navigate to the project directory:
 
@@ -68,6 +69,8 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
 ```
 
 You can simply copy this content and paste it into your `README.md` file.
+```

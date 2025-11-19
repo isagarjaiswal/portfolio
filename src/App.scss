@@ -1,11 +1,11 @@
-@import "./component/variable.scss";
+@import './component/variable.scss';
 
 @font-face {
-  font-family: "Roboto";
-  src: url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
-body{
+body {
   background-color: var(--bg);
 }
 
@@ -13,7 +13,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-container {

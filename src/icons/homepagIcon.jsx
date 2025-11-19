@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export function HomePageIcon() {
   return (
@@ -13,4 +13,3 @@ export function HomePageIcon() {
     </svg>
   );
 }
-

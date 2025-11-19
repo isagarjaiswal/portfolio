@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export const Netlify = () => {
   return (
-    <svg viewBox="0 0 128 128" width="24" fill='currentColor'>
+    <svg viewBox="0 0 128 128" width="24" fill="currentColor">
       <path
         // fill="#014847"
         d="M80.46 82.605h-8.777l-.734-.733V61.326c0-3.656-1.436-6.489-5.844-6.588-2.269-.06-4.864 0-7.638.11l-.416.425v26.589l-.733.733H47.54l-.733-.733V46.764l.733-.733h19.753c7.677 0 13.899 6.22 13.899 13.898v21.943l-.733.733z"
@@ -13,4 +13,4 @@ export const Netlify = () => {
       ></path>
     </svg>
   );
-}
+};

@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./notFound.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './notFound.scss';
 export const NotFound = () => (
   <div className="not-found-card">
     <div className="not-found-icon">
