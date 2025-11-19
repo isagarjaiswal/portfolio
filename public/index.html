@@ -6,53 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
-    <!-- Primary Meta Tags -->
+    <!-- Indexing & canonical -->
     <title>Sagar Jaiswal | Full-Stack Developer</title>
     <meta name="title" content="Sagar Jaiswal | Full-Stack Developer" />
     <meta
       name="description"
-      content="Portfolio of Sagar Jaiswal, Full-Stack Developer with 2+ years of experience in React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, and GCP. Explore my projects, skills, and professional journey."
+      content="Portfolio of Sagar Jaiswal — Full-Stack Developer with 2+ years experience in React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB and GCP. View projects, case studies and contact information."
     />
     <meta
       name="keywords"
-      content="Sagar Jaiswal, Full Stack Developer, React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, Redis, GCP, Portfolio, JavaScript Developer, Web Developer Bhopal"
+      content="Sagar Jaiswal, Full Stack Developer, React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB, GCP, Portfolio"
     />
     <meta name="author" content="Sagar Jaiswal" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://isagarjaiswal.netlify.app/" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="https://isagarjaiswal.netlify.app/sitemap.xml"
+    />
 
+    <!-- Preconnect & Preload to improve Core Web Vitals -->
+    <!-- Preconnect to analytics provider and common CDNs used during page load -->
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://www.google-analytics.com"
+      crossorigin
+    />
+    <!-- Preload a critical image used in social cards / hero to improve LCP -->
+    <link rel="preload" as="image" href="/thumbnail.png" />
+    <!-- If you host webfonts, preconnect to their origin or preload critical font files here. -->
+
+    <!-- Primary Meta Tags -->
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://isagarjaiswal.netlify.app/" />
     <meta property="og:title" content="Sagar Jaiswal | Full-Stack Developer" />
     <meta
       property="og:description"
-      content="Check out the portfolio of Sagar Jaiswal, a Full-Stack Developer experienced in React, Next.js, Node.js, and cloud-based solutions."
+      content="Check out the portfolio of Sagar Jaiswal — Full-Stack Developer experienced in React, Next.js, Node.js and cloud-based solutions."
     />
     <meta
       property="og:image"
       content="https://isagarjaiswal.netlify.app/thumbnail.png"
     />
+    <!-- Optionally add og:image:width and og:image:height for some social platforms -->
 
     <!-- Twitter / X -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://isagarjaiswal.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://isagarjaiswal.netlify.app/" />
+    <meta name="twitter:title" content="Sagar Jaiswal | Full-Stack Developer" />
     <meta
-      property="twitter:title"
-      content="Sagar Jaiswal | Full-Stack Developer"
+      name="twitter:description"
+      content="Portfolio of Sagar Jaiswal — projects and case studies in modern full-stack development."
     />
     <meta
-      property="twitter:description"
-      content="Portfolio of Sagar Jaiswal, showcasing projects and skills in modern full-stack development with React, Next.js, Node.js, and more."
-    />
-    <meta
-      property="twitter:image"
+      name="twitter:image"
       content="https://isagarjaiswal.netlify.app/thumbnail.png"
     />
-    <meta property="twitter:site" content="@iSagarjaiswal" />
-    <meta property="twitter:creator" content="@iSagarjaiswal" />
+    <meta name="twitter:site" content="@iSagarjaiswal" />
+    <meta name="twitter:creator" content="@iSagarjaiswal" />
 
     <!-- Apple & PWA -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Structured Data: Person + WebSite (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Sagar Jaiswal",
+            "url": "https://isagarjaiswal.netlify.app/",
+            "jobTitle": "Full-Stack Developer",
+            "description": "Full-Stack Developer experienced in React, Next.js, Node.js, NestJS, PostgreSQL, MongoDB and GCP.",
+            "sameAs": ["https://twitter.com/iSagarjaiswal"]
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://isagarjaiswal.netlify.app/",
+            "name": "Sagar Jaiswal | Full-Stack Developer",
+            "description": "Portfolio of Sagar Jaiswal showcasing projects, case studies and contact information.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://isagarjaiswal.netlify.app/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -65,12 +116,22 @@
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
-      gtag('config', 'G-NNDGJD1YJP');
+      /* Configure with page_path so GA4 records per-page data for SPAs.
+         For a single-page app you should also call gtag('config', ..., { 'page_path': newPath })
+         on route changes from your client router. */
+      gtag('config', 'G-NNDGJD1YJP', {
+        page_path: window.location.pathname + window.location.search,
+      });
     </script>
+
+    <!-- Add critical CSS inline (if small) to improve FCP, otherwise ensure critical CSS is loaded early -->
+    <!-- <style>/* small critical rules that render hero/above-the-fold */</style> -->
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Optional: lightweight noscript fallback for analytics/measurement (if required by your analytics setup) -->
   </body>
 </html>

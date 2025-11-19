@@ -1,3 +1,8 @@
-# https://www.robotstxt.org/robotstxt.html
+# Robots.txt for https://isagarjaiswal.netlify.app
+# Allow all crawlers full access
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Clean sitemap reference
+Sitemap: https://isagarjaiswal.netlify.app/sitemap.xml
