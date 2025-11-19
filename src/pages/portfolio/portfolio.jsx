@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import './portfolio.scss';
 import { Routes, Route } from 'react-router-dom';
-import { SideBar, Navbar, Footer, LoadingSpinner } from '../../component';
+import { SideBar, Navbar, Footer, Loader } from '../../component';
 import { gtagEvent } from '../../lib';
 
 const Homepage = React.lazy(() => import('../homepage/homepage'));
@@ -39,7 +39,7 @@ const Portfolio = () => {
       </div>
 
       <div className="main-content-box">
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />

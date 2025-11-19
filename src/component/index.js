@@ -17,4 +17,4 @@ export { ProjectCard } from './projectCard/projectCard';
 export { SkillCard } from './skillCard/skillCard';
 export { NotFound } from './notFound/notFound';
 export { GAListener } from './GA/GAListener';
-export { LoadingSpinner } from './loadingSpinner/loadingSpinner';
+export { loader } from './loader/loader';
