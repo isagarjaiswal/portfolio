@@ -9,7 +9,7 @@ import {
 } from '../../icons/index';
 import { Project, Blog } from '../index';
 import { LinkItem } from '../../component/index';
-import { gtagEvent } from '../../lib/analytics';
+import { gtagEvent } from '../../lib';
 
 export const Homepage = () => {
   const navigate = useNavigate();

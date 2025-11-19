@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.scss';
 import { CopyBtn } from '../../component';
-import { gtagEvent } from '../../lib/analytics';
+import { gtagEvent } from '../../lib';
 
 export const Contact = () => {
   const handleCalendlyClick = () => {

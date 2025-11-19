@@ -1,4 +1,3 @@
-// src/lib/analytics.js
 export const gtagPageview = (url) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'page_view', {

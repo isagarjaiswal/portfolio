@@ -3,7 +3,7 @@ import './portfolio.scss';
 import { Routes, Route } from 'react-router-dom';
 import { About, Blog, Contact, Homepage, Project } from '../index';
 import { SideBar, Navbar, Footer, NotFound } from '../../component/index';
-import { gtagEvent } from '../../lib/analytics';
+import { gtagEvent } from '../../lib';
 
 export const Portfolio = () => {
   const [isMobileView, setIsMobileView] = useState(false);

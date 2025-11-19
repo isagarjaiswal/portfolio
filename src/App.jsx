@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 import { Portfolio } from './pages/index';
-import GAListener from './components/GA/GAListener';
 import './App.scss';
+import { GAListener } from './component';
 export const ThemeContext = createContext();
 
 const App = () => {

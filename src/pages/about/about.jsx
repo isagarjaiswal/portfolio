@@ -4,7 +4,7 @@ import { Experience, Skill } from '../../component';
 import myPhoto from '../../images/myProfile.png';
 import myPhotoPNG from '../../images/myProfilePNG.png';
 import { educationData, experienceData } from '../../data/index';
-import { gtagEvent } from '../../lib/analytics';
+import { gtagEvent } from '../../lib';
 
 export const About = () => {
   useEffect(() => {

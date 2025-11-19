@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './blog.scss';
 import { BlogCard } from '../../component/index';
 import { blogsData } from '../../data';
-import { gtagEvent } from '../../lib/analytics';
+import { gtagEvent } from '../../lib';
 
 export const Blog = () => {
   const data = blogsData;

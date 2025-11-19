@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CopyIcon, ResumeDone } from '../../icons';
 import './copyBtn.scss';
-import { gtagEvent } from '../../lib/analytics';
+import { gtagEvent } from '../../lib';
 
 export const CopyBtn = () => {
   const [isCopied, setIsCopied] = useState(false);

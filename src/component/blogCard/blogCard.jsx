@@ -1,6 +1,6 @@
 import React from 'react';
 import './blogCard.scss';
-import { gtagEvent } from '../../lib/analytics';
+import { gtagEvent } from '../../lib';
 export const BlogCard = ({ blogData }) => {
   const { date, heading, description, mediumLink } = blogData;
   const toggleDetails = () => {
