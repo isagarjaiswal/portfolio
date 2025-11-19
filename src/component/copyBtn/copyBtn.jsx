@@ -7,6 +7,13 @@ export const CopyBtn = () => {
 
   const copyToClipboard = () => {
     const email = "engsagarjaiswal@gmail.com";
+    
+    gtagEvent({
+      action: "copy_email_click",
+      category: "contact",
+      label: "Copy Email Button"
+    });
+
     navigator.clipboard
       .writeText(email)
       .then(() => {

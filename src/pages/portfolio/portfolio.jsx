@@ -8,9 +8,19 @@ export const Portfolio = () => {
     const [isMobileView, setIsMobileView] = useState(false);
 
     useEffect(() => {
+        gtagEvent({
+            action: "portfolio_view",
+            category: "page_load",
+            label: "Portfolio Root",
+          });
         const handleResize = () => {
             setIsMobileView(window.innerWidth <= 875);
         };
+        gtagEvent({
+            action: "layout_switch",
+            category: "device",
+            label: isMobile ? "Mobile view" : "Desktop View",
+          });
         handleResize();
         window.addEventListener("resize", handleResize);
         return () => {
