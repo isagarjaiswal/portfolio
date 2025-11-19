@@ -6,6 +6,16 @@ import myPhotoPNG from "../../images/myProfilePNG.png";
 import { educationData, experienceData } from "../../data/index";
 
 export const About = () => {
+  useEffect(() => {
+
+      gtagEvent({
+        action: "about_page_view",
+        category: "page_view",
+        label: "About Page",
+      });
+ 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <div className="about-container">
       <div className="about__header">
