@@ -1,7 +1,8 @@
 import React, { createContext, useState } from 'react';
-import { Portfolio } from './pages/index';
+import Portfolio from './pages/portfolio/portfolio';
 import './App.scss';
 import { GAListener } from './component';
+
 export const ThemeContext = createContext();
 
 const App = () => {

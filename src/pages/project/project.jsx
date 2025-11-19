@@ -3,7 +3,7 @@ import './project.scss';
 import { ProjectCard } from '../../component/index';
 import { projectsData } from '../../data/project';
 
-export const Project = ({ head }) => {
+const Project = ({ head }) => {
   const data = projectsData;
   return (
     <div className={`projects-container`}>
@@ -22,3 +22,5 @@ export const Project = ({ head }) => {
     </div>
   );
 };
+
+export default Project;

@@ -3,7 +3,7 @@ import './contact.scss';
 import { CopyBtn } from '../../component';
 import { gtagEvent } from '../../lib';
 
-export const Contact = () => {
+const Contact = () => {
   const handleCalendlyClick = () => {
     gtagEvent({
       action: 'schedule_call_click',
@@ -102,3 +102,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export default Contact;

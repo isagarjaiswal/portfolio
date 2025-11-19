@@ -6,7 +6,7 @@ import myPhotoPNG from '../../images/myProfilePNG.png';
 import { educationData, experienceData } from '../../data/index';
 import { gtagEvent } from '../../lib';
 
-export const About = () => {
+const About = () => {
   useEffect(() => {
     gtagEvent({
       action: 'about_page_view',
@@ -62,3 +62,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;
