@@ -4,7 +4,7 @@ import { BlogCard } from '../../component/index';
 import { blogsData } from '../../data';
 import { gtagEvent } from '../../lib';
 
-export const Blog = () => {
+const Blog = () => {
   const data = blogsData;
   useEffect(() => {
     gtagEvent({
@@ -29,3 +29,5 @@ export const Blog = () => {
     </div>
   );
 };
+
+export default Blog;

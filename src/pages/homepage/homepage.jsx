@@ -7,11 +7,14 @@ import {
   ResumeDone,
   ResumeDownload,
 } from '../../icons/index';
-import { Project, Blog } from '../index';
+
+import Blog from '../blog/blog';
+import Project from '../project/project';
+
 import { LinkItem } from '../../component/index';
 import { gtagEvent } from '../../lib';
 
-export const Homepage = () => {
+const Homepage = () => {
   const navigate = useNavigate();
   const [isDownload, setIsDownload] = useState(false);
 
@@ -117,3 +120,5 @@ export const Homepage = () => {
     </>
   );
 };
+
+export default Homepage;

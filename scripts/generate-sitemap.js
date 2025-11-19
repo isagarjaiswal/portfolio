@@ -16,13 +16,17 @@ const routes = [
 ];
 
 // Convert routes into XML
-const urls = routes.map(r => `
+const urls = routes
+  .map(
+    (r) => `
   <url>
     <loc>${SITE_URL}${r.path}</loc>
     <changefreq>monthly</changefreq>
     <priority>${r.priority}</priority>
   </url>
-`).join('\n');
+`
+  )
+  .join('\n');
 
 // Final XML structure
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
