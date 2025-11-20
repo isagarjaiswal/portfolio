@@ -1,76 +1,113 @@
-Certainly! Here's the Markdown content that you can copy directly into your `README.md` file:
+<div align="center">
+  <img src="src/images/myProfile.png" alt="Sagar Jaiswal" width="150" height="150" style="border-radius: 50%;">
 
-````markdown
-# Portfolio Project
+# Sagar Jaiswal
 
-This is my portfolio project showcasing my skills, projects, and experiences as a ReactJS and SCSS developer.
+**Full-Stack Software Engineer**
 
-## Live Demo
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-blue?style=for-the-badge&logo=google-chrome)](https://isagarjaiswal.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/isagarjaiswal)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/isagarjaiswal)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail)](mailto:sagarjaiswal@example.com)
 
-Check out the live version of the portfolio [here](https://isagarjaiswal.netlify.app/).
+  <br />
 
-## Description
+_Building scalable web applications with modern technologies._
 
-This portfolio project serves as a showcase of my work as a ReactJS and SCSS developer. It provides an overview of my skills, experiences, and projects. The portfolio is designed to be responsive and user-friendly, ensuring a seamless experience across various devices.
+</div>
 
-## Features
+---
 
-- Responsive design: Ensures optimal viewing experience across a wide range of devices.
-- Projects showcase: Highlights various projects I've worked on, providing details and links to view them.
-- Skills and expertise: Lists my skills and expertise as a ReactJS and SCSS developer, showcasing my proficiency in these technologies.
-- Contact information: Provides ways to contact me for potential collaborations or inquiries.
+## 👨‍💻 About Me
 
-## Technologies Used
+I am a passionate **Software Engineer** with experience in building high-performance web applications. Currently working at **Sav Technologies**, I specialize in the **MERN stack (MongoDB, Express, React, Node.js)** and **Next.js**. I have a strong track record of delivering scalable solutions, optimizing backend performance, and creating intuitive user interfaces.
 
-- ReactJS
-- SCSS
-- HTML/CSS
-- JavaScript
+My expertise extends to **cloud integrations (GCP)**, **database management (PostgreSQL, Redis)**, and **architecting secure systems (OAuth 2.0, RBAC)**. I thrive in collaborative environments and enjoy solving complex problems with clean, maintainable code.
 
-## Usage
+## 🚀 Key Highlights
 
-To view the portfolio locally, follow these steps:
+- **Full-Stack Architect:** Designed and built scalable admin portals and backend services using **Next.js** and **NestJS**.
+- **Performance Optimization:** Improved frontend performance by **20%** and reduced data errors by **15%** through rigorous optimization and validation.
+- **Integrations:** Successfully integrated **WooCommerce**, **GCP**, and **Slack** to streamline business workflows.
+- **Mentorship:** Led development initiatives and contributed to code reviews and CI/CD pipeline improvements.
 
-1. Clone the repository:
+## 🛠️ Technical Skills
 
-   ```bash
-   git clone https://github.com/isagarjaiswal/portfolio.git
-   ```
-````
+| Category           | Technologies                                                                 |
+| :----------------- | :--------------------------------------------------------------------------- |
+| **Frontend**       | React.js, Next.js, Redux Toolkit, TypeScript, Tailwind CSS, SCSS, MUI, HTML5 |
+| **Backend**        | Node.js, NestJS, Express.js, GraphQL, REST APIs                              |
+| **Databases**      | MongoDB, PostgreSQL, Redis                                                   |
+| **Tools & DevOps** | Git, Docker, GCP, Webpack, Jest, Postman                                     |
 
-2. Navigate to the project directory:
+## 💼 Professional Experience
 
-   ```bash
-   cd portfolio
-   ```
+### **Software Engineer** | Sav Technologies Limited
 
-3. Install dependencies:
+_May 2024 – Present_
 
-   ```bash
-   npm install
-   ```
+- Leading development of a scalable **Next.js** admin portal.
+- Architecting backend services in **NestJS** with **PostgreSQL**, **MongoDB**, and **Redis**.
+- Implementing **OAuth 2.0** and **RBAC** for secure access.
 
-4. Start the development server:
+### **Software Development Engineer - I** | Priyam Innovations Pvt. Ltd.
 
-   ```bash
-   npm start
-   ```
+_June 2023 – May 2024_
 
-5. Open your browser and visit `http://localhost:3000` to view the portfolio.
+- Developed REST and GraphQL APIs with **Node.js**.
+- Built full-stack admin panels and optimized MongoDB schemas.
+- Automated workflows using GitHub APIs and Slack integrations.
 
-## Deployment
+### **Software Engineer - Intern** | Priyam Innovations Pvt. Ltd.
 
-The portfolio is deployed using Netlify and can be accessed [here](https://isagarjaiswal.netlify.app/).
+_October 2022 – May 2023_
 
-## Contributing
+- Boosted data accuracy by **25%** using React controlled components.
+- Ensured cross-browser compatibility and contributed to CI/CD processes.
 
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+## 📂 Featured Projects
 
-## License
+### [Back Office Portal](https://isagarjaiswal.netlify.app/)
 
-This project is licensed under the [MIT License](LICENSE).
+A scalable admin panel built with **Next.js** and **NestJS**. Features real-time content sync, data visualization, and role-based access control.
 
-```
+### [Merchant Portal](https://merchant.sav.money)
 
-You can simply copy this content and paste it into your `README.md` file.
-```
+Automated reporting tool that retrieves data from **GCP Buckets** and generates dynamic charts and CSV exports for business intelligence.
+
+### [Chrome Extension for Product Scraping](https://isagarjaiswal.netlify.app/)
+
+A **React + Vite** extension that scrapes e-commerce product details and uses **Google Gemini AI** for categorization.
+
+### [React Table](https://react-js-table.app/)
+
+An interactive data table supporting sorting, searching, and pagination, demonstrating proficiency in complex UI logic.
+
+---
+
+## 💻 Getting Started with This Portfolio
+
+If you'd like to run this portfolio locally:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/isagarjaiswal/portfolio.git
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Start the server:**
+    ```bash
+    npm start
+    ```
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+  Made with ❤️ by <b>Sagar Jaiswal</b>
+</div>
