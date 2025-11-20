@@ -11,7 +11,7 @@ export const PersonalDetails = () => {
   return (
     <div className={`side-profile-container`}>
       <div className="side-img-container" onClick={handleNavigate}>
-        <img className="myimg" src={myPhoto} alt="Admin" />
+        <img rel="preload" className="myimg" src={myPhoto} alt="Admin" />
       </div>
       <div className="role-name-container">
         <div className="name-container">Sagar Jaiswal</div>

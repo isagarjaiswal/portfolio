@@ -44,11 +44,13 @@ const About = () => {
         </div>
         <div className="about__profile-content">
           <img
+            rel="preload"
             src={myPhoto}
             className="about__profile-img"
             alt="sagar-profile-img"
           />
           <img
+            rel="lazy"
             className="about__profile-img"
             src={myPhotoPNG}
             alt="sagar-profile-img"
